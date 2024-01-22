@@ -5,7 +5,7 @@ import state from '../store';
 import {reader} from '../config/helpers';
 import {DecalTypes} from '../config/constants';
 import {AIPicker, ColorPicker, FilePicker} from '../components';
-import {MarkdownViewer} from '../components/MarkdownViewer.tsx';
+import {BlogViewer} from 'client/src/components/BlogViewer.tsx';
 import {ContactMeForm} from '../components/ContactMeForm.tsx';
 import {PortfolioItem} from '../components/PortfolioItem.tsx';
 
@@ -35,7 +35,7 @@ const portfolioItems = [
 const staggerChildrenVariant = {
   initial: {
     x: '200%',
-    // opacity: '0',
+    opacity: '0',
     transition: {
       staggerChildren: .1,
       delayChildren: .1,
@@ -170,114 +170,12 @@ const Customizer = () => {
   };
 
   return (
-      <AnimatePresence>
-        { snap.intro && (
-            <div className={ `h-full` }>
 
-              <motion.div className="container text-gray-500 text-opacity-90 p-0 h-full">
-                <motion.div
-                    className="slide absolute inset-0 h-full sm:p-[32px] p-[16px] flex flex-col mt-[80px] pb-[80px]"
-                    initial={ 'initial' }
-                    exit={ 'initial' }
-                    variants={ staggerChildrenVariant }
-                    animate={ snap.portfolioIsOpen ? 'animate' : 'initial' }
-                >
-                  {/* Content for the sliding div */ }
-                  <h1 className="head-text text-gray-500 text-opacity-90">
-                    Portfolio
-                  </h1>
+      <div className={`pt-8 gap-8`}>
+        Portfolio
 
-                  <motion.div
-                      className="overflow-y-auto overflow-x-hidden h-full text-[.75rem] flex flex-col"
-                      variants={ staggerChildrenVariant }
-                  >
-                    { portfolioItems.map(
-                        (pfItem, i) =>
-                            <motion.div variants={ staggerChildrenVariant }
-                                        className={ 'flex flex-col mt-8' }
-                                        key={ i }
-                            >
-                              <PortfolioItem item={pfItem}></PortfolioItem>
-                            </motion.div>
-                    ) }
-                  </motion.div>
-
-                  <motion.div>
-                    <p className="text-gray-700 mb-4 text-[.75rem] flex flex-col text-gray-500 text-opacity-100 bg-violet-50 p-2">
-                      *References and full work history available upon request
-                    </p>
-                  </motion.div>
-                </motion.div>
-              </motion.div>
-
-              <motion.div className="container text-gray-500 text-opacity-90 p-0">
-                <motion.div
-                    className="slide absolute inset-0 h-full sm:p-[32px] p-[16px] flex flex-col mt-[80px] pb-[80px]"
-                    initial={ 'initial' }
-                    exit={ 'initial' }
-                    variants={ staggerChildrenVariant }
-                    animate={ snap.blogIsOpen ? 'animate' : 'initial' }
-                >
-                  <h1 className="head-text text-gray-500 text-opacity-90 bg-white">
-                    Blog
-                  </h1>
-
-                  <motion.div className="text-[.75rem] h-full overflow-y-auto overflow-hidden flex flex-col" variants={ staggerChildrenVariant }>
-                    <motion.section variants={ staggerChildrenVariant }
-                                className={ 'flex flex-col' }
-                                key={ 1 }
-                    >
-                      <MarkdownViewer filePath={ `blog/event-loop.md` } />
-                    </motion.section>
-                    <motion.section variants={ staggerChildrenVariant }
-                                className={ 'flex flex-col' }
-                                key={ 2 }
-                    >
-                      <MarkdownViewer filePath={ `blog/userref-hook.md` } />
-                    </motion.section>
-                    <motion.section variants={ staggerChildrenVariant }
-                                className={ 'flex flex-col' }
-                                key={ 3 }
-                    >
-                      <MarkdownViewer filePath={ `blog/tailwindcss.md` } />
-                    </motion.section>
-                    <motion.section variants={ staggerChildrenVariant }
-                                className={ 'flex flex-col' }
-                                key={ 4 }
-                    >
-                      <MarkdownViewer filePath={ `blog/docker.md` } />
-                    </motion.section>
-
-                  </motion.div>
-                </motion.div>
-              </motion.div>
-
-              <motion.div className="container text-gray-500 text-opacity-90 p-0">
-                <motion.div
-                    className="slide absolute inset-0 h-full sm:p-[32px] p-[16px] flex flex-col mt-[80px] pb-[80px]"
-                    initial={ 'initial' }
-                    exit={ 'initial' }
-                    variants={ staggerChildrenVariant }
-                    animate={ snap.contactMeIsOpen ? 'animate' : 'initial' }
-                >
-                  <h1 className="head-text text-gray-500 text-opacity-90 bg-white">
-                    Contact Me
-                  </h1>
-
-                  <motion.div className="text-[.75rem] h-full overflow-y-auto overflow-hidden flex flex-col" variants={ staggerChildrenVariant }>
-                    <motion.section variants={ staggerChildrenVariant }
-                                className={ 'flex flex-col' }
-                                key={ 1 }
-                    >
-                      <ContactMeForm />
-                    </motion.section>
-
-                  </motion.div>
-                </motion.div>
-              </motion.div>
-            </div>
-        ) }
-      </AnimatePresence>
+        <a href="/">Back</a>
+      </div>
   );
 };
 

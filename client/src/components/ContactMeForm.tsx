@@ -7,15 +7,15 @@ export function ContactMeForm (props: {
   formData: {name: string; message: string; email: string},
   onChange: (e: React.ChangeEvent<HTMLInputElement|HTMLTextAreaElement>) => void,
   disabled: boolean
-}) {
+}): JSX.Element {
   return <motion.form layout
                       onSubmit={props.onSubmit}
-                      className={'w-full flex flex-col sine lite-gray mt-[2rem]'}
+                      className={'w-full flex flex-col text-sm mt-[1rem]'}
   >
     <motion.label>
       Name:
       <motion.input
-        className={'border-2 float-right w-full bg-[floralwhite] h-10'}
+        className={'border-2 float-right w-full bg-violet-50 h-10 rounded-none'}
         type="text"
         name="name"
         value={props.formData?.name}
@@ -28,7 +28,7 @@ export function ContactMeForm (props: {
     <motion.label>
       Email:
       <motion.input
-        className={'border-2 float-right w-full bg-[floralwhite] h-10'}
+        className={'border-2 float-right w-full bg-violet-50 h-10 rounded-none'}
         type="email"
         name="email"
         value={props.formData?.email}
@@ -41,7 +41,7 @@ export function ContactMeForm (props: {
     <motion.label>
       Message:
       <motion.textarea
-        className={'resize-none border-2 float-right w-full bg-[floralwhite] h-32'}
+        className={'resize-none border-2 float-right w-full bg-violet-50 h-32 rounded-none'}
         name="message"
         value={props.formData?.message}
         onChange={props.onChange}

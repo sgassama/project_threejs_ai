@@ -7,6 +7,21 @@
 
 html {
     font-family: "Inter", sans-serif;
+    color: #656565;
+}
+
+.essgee-bg {
+    position: absolute;
+    inset: 0;
+    opacity: .1;
+    background-image: url('/bg.svg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -99;
+}
+
+body, html {
+    @apply overflow-hidden;
 }
 
 @supports (font-variation-settings: normal) {
@@ -91,17 +106,50 @@ input[type="file"] {
     display: none !important;
 }
 
-
-/*
-markdownPreviewer__preview
-*/
-
-.markdownPreviewer__preview strong {
-    @apply m-[16px] mb-[8px]
+.container {
+    /* Tailwind classes for container styling */
+    @apply max-w-md mx-auto px-4;
 }
 
-.markdownPreviewer__preview p {
-    @apply py-8 inline
+.essgee .home-content-section {
+    @apply p-4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*padding: 20px;*/
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.essgee .visible {
+    visibility: visible;
+    transition: transform 0.5s ease-in-out;
+}
+
+.essgee .hidden {
+    visibility: hidden;
+    transform: translateX(-100%);
+}
+
+.essgee .bordered {
+    position: relative;
+    border: 1px solid #c1c1c1;
+}
+
+.essgee .bordered:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #c1c1c1;
 }
 
 .markdownPreviewer__preview h1 {
@@ -161,7 +209,56 @@ markdownPreviewer__preview
 }
 
 .markdownPreviewer__preview pre {
-    @apply text-xs bg-black p-[16px] text-white
+    @apply text-xs bg-black p-[16px] text-white overflow-x-auto;
 }
 
 /* END markdownPreviewer__preview */
+
+/* portfolio */
+.portfolio-item {
+    code {
+        font-family: input-mono, monospace;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .progress {
+        position: sticky;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        float: right;
+
+        svg {
+            transform: translateY(0px) rotate(-90deg) translateX(0px);
+        }
+
+        .indicator {
+            stroke: #5e35b1;
+        }
+    }
+
+    .bg {
+        stroke: black;
+        opacity: 0.2;
+    }
+
+    circle {
+        stroke-dashoffset: 0;
+        stroke-width: 5%;
+        fill: whitesmoke;
+    }
+
+    section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            @apply w-full h-full;
+            position: relative;
+        }
+    }
+}
+/* END portfolio */

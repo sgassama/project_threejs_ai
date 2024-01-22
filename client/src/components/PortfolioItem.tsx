@@ -10,7 +10,7 @@ export type PortfolioItem = {
 export function PortfolioItem ({containerRef, item}: {
   containerRef?: RefObject<HTMLElement>|undefined,
   item: PortfolioItem|null
-}): React.JSX.Element {
+}): JSX.Element {
   const portfolioItemRef = useRef(null)
   const {scrollYProgress} = useScroll({
     layoutEffect: false,
@@ -23,21 +23,10 @@ export function PortfolioItem ({containerRef, item}: {
   return (
     <motion.section layout
                     className={'first:my-[0%] my-[16px] last:mb-0 relative min-h-[600px]'}
-
     >
-      <motion.div className={''}>
-        <motion.span className={'text-4xl z-20 font-[600] top-0 left-2 h-full gradient-text sticky w-[30%]'}>
-          {item && item.name}
-        </motion.span>
+      <motion.div className={'portfolio-item'}>
 
-        <motion.section ref={portfolioItemRef}
-                        className={'portfolio-content z-30 absolute left-[250px] h-full w-1/2 top-0 p-0 sine lite-gray'}>
-          <motion.span>
-            {item && item.content}
-          </motion.span>
-        </motion.section>
-
-        <figure className="progress">
+        <figure className="progress sticky">
           <svg id="progress" width="50" height="50" viewBox="0 0 100 100">
             <circle cx="50" cy="50" r="30" pathLength="1" className="bg" />
             <motion.circle layout
@@ -50,6 +39,18 @@ export function PortfolioItem ({containerRef, item}: {
             />
           </svg>
         </figure>
+
+        <motion.h1 className={'text-violet-600'}>
+          {item && item.name}
+        </motion.h1>
+
+        <motion.section ref={portfolioItemRef}
+                        className={'mt-4 inset-0 items-start top-16 text-sm max-w-[65%]'}
+        >
+          {item && item.content}
+        </motion.section>
+
+      <hr/>
       </motion.div>
     </motion.section>
   )

@@ -12,7 +12,7 @@ const skills: string[] = [
   '• Collaboration Tools: JIRA, Confluence, Trello, Slack, Google Drive, Microsoft Office',
 ]
 
-export function SkillSetList (): React.JSX.Element {
+export function SkillSetList (): JSX.Element {
   const skillSetRef = useRef(null)
 
   const boxVariant = {
@@ -34,7 +34,7 @@ export function SkillSetList (): React.JSX.Element {
   }
 
   return <motion.ul ref={skillSetRef}
-                    className={'skill-set text-2xl justify-center align-middle flex-wrap border-violet-800 bg-gray-50 list-item'}
+                    className={'skill-set text-xs justify-center align-middle flex-wrap border-violet-800 bg-gray-50 list-item'}
                     variants={boxVariant}
                     animate={'visible'}
                     initial="hidden"

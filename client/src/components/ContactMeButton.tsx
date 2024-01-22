@@ -40,7 +40,7 @@ export function ContactMeButton ({isDisabled = false}: {
         <CustomButton
           type="filled"
           title="Submit"
-          handleClick={() => state.contactMeIsOpen = !state.contactMeIsOpen}
+          handleClick={() => {}}
           customStyles="w-fit px-4 py-2.5 font-bold text-sm"
         />
       </motion.div>
