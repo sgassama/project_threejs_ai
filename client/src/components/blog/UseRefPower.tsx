@@ -1,8 +1,9 @@
 import React from 'react';
+import {motion} from "framer-motion";
 
 const UseRefPower: React.FC = () => {
   return (
-    <div>
+    <motion.div className={`markdownPreviewer__preview essgee-page`}>
       <h1>Unleash the Power of React's useRef Hook: Mastering State Management with Ease</h1>
 
       <p>
@@ -23,8 +24,14 @@ const UseRefPower: React.FC = () => {
         </p>
 
         <ul>
-          <li><strong>State Management:</strong> useRef is particularly useful for managing state that doesn't need to trigger re-renders, such as DOM references, timers, and animation values.</li>
-          <li><strong>Performance Optimization:</strong> By avoiding unnecessary re-renders, useRef can significantly improve the performance of your React applications.</li>
+          <li>
+            <strong>State Management:</strong>
+            useRef is particularly useful for managing state that doesn't need to trigger re-renders, such as DOM references, timers, and animation values.
+          </li>
+          <li>
+            <strong>Performance Optimization:</strong>
+            By avoiding unnecessary re-renders, useRef can significantly improve the performance of your React applications.
+          </li>
         </ul>
       </section>
 
@@ -46,29 +53,30 @@ const UseRefPower: React.FC = () => {
         <p>
           Let's dive into a practical example to solidify your understanding. Suppose we have a form with an input field and a button. We want to access the value of the input field when the button is clicked. Here's how we can achieve this using the useRef hook:
         </p>
-
+        <br/>
         <pre>
           <code>
-{`import React, { useRef } from "react";
+            {`import React, { useRef } from "react";
 
-const MyComponent = () => {
-  const inputRef = useRef();
+            const MyComponent = () => {
+              const inputRef = useRef();
 
-  const handleClick = () => {
-    console.log(inputRef.current.value);
-  };
+              const handleClick = () => {
+                console.log(inputRef.current.value);
+              };
 
-  return (
-    <div>
-      <input type="text" ref={inputRef} />
-      <button onClick={handleClick}>Click Me</button>
-    </div>
-  );
-};
+              return (
+                <div>
+                  <input type="text" ref={inputRef} />
+                  <button onClick={handleClick}>Click Me</button>
+                </div>
+              );
+            };
 
-export default MyComponent;`}
+            export default MyComponent;`}
           </code>
         </pre>
+        <br/>
 
         <p>
           In this example:
@@ -78,7 +86,8 @@ export default MyComponent;`}
           <li>We import the useRef hook from React.</li>
           <li>We declare a ref variable called inputRef using useRef().</li>
           <li>We assign the inputRef variable to the input field using the ref attribute.</li>
-          <li>When the button is clicked, the handleClick() function is called, which logs the value of the input field to the console.</li>
+          <li>When the button is clicked, the handleClick() function is called, which logs the value of the input field to the console.
+          </li>
         </ol>
       </section>
 
@@ -88,7 +97,7 @@ export default MyComponent;`}
           Embrace the power of React's useRef hook to elevate your state management skills and create more efficient and performant web applications. Remember, the useRef hook is your ally in tackling complex state management scenarios with ease. Keep exploring, keep learning, and keep building amazing things with React!
         </p>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

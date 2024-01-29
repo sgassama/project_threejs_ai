@@ -1,264 +1,293 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
-@import url("https://rsms.me/inter/inter.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --violet: #5e35b1;
+  --green: rgba(4, 171, 151, 1);
+  --grey-text: #7a7a7a;
+  --dark-grey-text: #5a5a5a;
+}
+
+html, body {
+  @apply h-full w-full text-[1rem];
+}
+
 html {
-    font-family: "Inter", sans-serif;
-    color: #656565;
+  font-family: 'Nunito', sans-serif;
+  color: var(--grey-text);
 }
 
 .essgee-bg {
-    position: absolute;
-    inset: 0;
-    opacity: .1;
-    background-image: url('/bg.svg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    z-index: -99;
+  @apply h-full w-full overflow-hidden;
+  position: fixed;
+  top: 0;
+  opacity: .1;
+  background-image: url('assets/bg.svg');
+  background-repeat: repeat-x;
+  z-index: -99;
 }
 
-body, html {
-    @apply overflow-hidden;
+.gradient-text {
+  background: linear-gradient(to right, var(--green), var(--violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, .2);
+  background-clip: text;
+  color: rgba(0, 0, 0, .8);
 }
 
 @supports (font-variation-settings: normal) {
-    html {
-        font-family: "Inter var", sans-serif;
-    }
+  html {
+    font-family: 'Nunito', sans-serif;
+  }
 }
 
 .app {
-    @apply relative w-full h-screen overflow-hidden;
+  @apply relative w-full h-screen overflow-hidden;
 }
 
 .home {
-    @apply flex justify-start sm:justify-between items-center flex-row sm:p-[32px] p-[16px] h-full;
+  @apply flex justify-start sm:justify-between items-center flex-row sm:p-[32px] p-[16px] h-full;
 }
 
 .home-content {
-    @apply flex-1 justify-between flex flex-col gap-8;
+  @apply flex-1 justify-between flex flex-col gap-8;
 }
 
 .head-text {
-    @apply xl:text-[10rem] text-[4.5rem] xl:leading-[11rem] leading-[4rem] font-black text-gray-500 text-opacity-90;
+  @apply xl:text-[10rem] text-[4.5rem] xl:leading-[11rem] leading-[4rem] font-black text-gray-500 text-opacity-90;
 }
 
 .download-btn {
-    @apply w-14 h-14 flex justify-center items-center rounded-full glassmorphism cursor-pointer outline-none;
+  @apply w-14 h-14 flex justify-center items-center rounded-full glassmorphism cursor-pointer outline-none;
 }
 
 .editortabs-container {
-    @apply glassmorphism w-16 border-[2px] rounded-lg flex flex-col justify-center items-center ml-1 py-4 gap-4;
+  @apply glassmorphism w-16 border-[2px] rounded-lg flex flex-col justify-center items-center ml-1 py-4 gap-4;
 }
 
 .filtertabs-container {
-    @apply absolute z-10 bottom-5 right-0 left-0 w-full flex justify-center items-center flex-wrap gap-4;
+  @apply absolute z-10 bottom-5 right-0 left-0 w-full flex justify-center items-center flex-wrap gap-4;
 }
 
 .aipicker-container {
-    @apply absolute left-full ml-3 glassmorphism p-3 w-[195px] h-[220px] rounded-md flex flex-col gap-4;
+  @apply absolute left-full ml-3 glassmorphism p-3 w-[195px] h-[220px] rounded-md flex flex-col gap-4;
 }
 
 .aipicker-textarea {
-    @apply w-full bg-transparent text-sm border border-gray-300 p-2 outline-none flex-1;
+  @apply w-full bg-transparent border border-gray-300 p-2 outline-none flex-1;
 }
 
 .filepicker-container {
-    @apply absolute left-full ml-3 glassmorphism p-3 w-[195px] h-[220px] flex flex-col rounded-md;
+  @apply absolute left-full ml-3 glassmorphism p-3 w-[195px] h-[220px] flex flex-col rounded-md;
 }
 
 .filepicker-label {
-    @apply border border-gray-300 py-1.5 px-2 rounded-md shadow-sm text-xs text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 cursor-pointer w-fit;
+  @apply border border-gray-300 py-1.5 px-2 rounded-md shadow-sm text-xs text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 cursor-pointer w-fit;
 }
 
 .tab-btn {
-    @apply w-14 h-14 flex justify-center items-center cursor-pointer select-none;
+  @apply w-14 h-14 flex justify-center items-center cursor-pointer select-none;
 }
 
 .glassmorphism {
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 input[type="file"] {
-    z-index: -1;
-    position: absolute;
-    opacity: 0;
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
 }
 
 .sketch-picker {
-    width: 170px !important;
-    background: rgba(255, 255, 255, 0.25) !important;
-    box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07) !important;
-    backdrop-filter: blur(4px) !important;
-    -webkit-backdrop-filter: blur(4px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.18) !important;
-    border-radius: 6px !important;
+  width: 170px !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 6px !important;
 }
 
 .sketch-picker > div:nth-child(3) {
-    display: none !important;
+  display: none !important;
 }
 
 .container {
-    /* Tailwind classes for container styling */
-    @apply max-w-md mx-auto px-4;
+  /* Tailwind classes for container styling */
+  @apply max-w-md mx-auto px-4;
 }
 
 .essgee .home-content-section {
-    @apply p-4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*padding: 20px;*/
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  @apply p-4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*padding: 20px;*/
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .essgee .visible {
-    visibility: visible;
-    transition: transform 0.5s ease-in-out;
+  visibility: visible;
+  transition: transform 0.5s ease-in-out;
 }
 
 .essgee .hidden {
-    visibility: hidden;
-    transform: translateX(-100%);
+  visibility: hidden;
+  transform: translateX(-100%);
 }
 
 .essgee .bordered {
-    position: relative;
-    border: 1px solid #c1c1c1;
+  position: relative;
+  border: 1px solid #c1c1c1;
 }
 
 .essgee .bordered:before {
-    content: " ";
-    position: absolute;
-    z-index: -1;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border: 1px solid #c1c1c1;
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid #c1c1c1;
 }
 
 .markdownPreviewer__preview h1 {
-    @apply !mt-8 text-violet-600;
-    display: block;
-    /*font-size: 2em;*/
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    margin: 0.67em 0;
-    font-weight: bold;
+  @apply !mt-0 text-violet-600;
+  display: block;
+  /*font-size: 2em;*/
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin: 0.67em 0;
+  font-weight: bold;
 }
 
 .markdownPreviewer__preview h2 {
-    display: block;
-    font-size: 1.5em;
-    margin: 0.83em 0;
-    font-weight: bold;
+  display: block;
+  font-size: 1.5em;
+  margin: 0.83em 0;
+  font-weight: bold;
 }
 
 .markdownPreviewer__preview h3 {
-    display: block;
-    font-size: 1.17em;
-    margin: 1em 0;
-    font-weight: bold;
+  display: block;
+  font-size: 1.17em;
+  margin: 1em 0;
+  font-weight: bold;
 }
 
 .markdownPreviewer__preview h4 {
-    display: block;
-    margin: 1.33em 0;
-    font-weight: bold;
+  display: block;
+  margin: 1.33em 0;
+  font-weight: bold;
 }
 
 .markdownPreviewer__preview h5 {
-    display: block;
-    font-size: .83em;
-    margin: 1.67em 0;
-    font-weight: bold;
+  display: block;
+  font-size: .83em;
+  margin: 1.67em 0;
+  font-weight: bold;
 }
 
 .markdownPreviewer__preview h6 {
-    display: block;
-    font-size: .67em;
-    margin: 2.33em 0;
-    font-weight: bold;
+  display: block;
+  font-size: .67em;
+  margin: 2.33em 0;
+  font-weight: bold;
 }
 
 .markdownPreviewer__preview a {
-    @apply text-blue-300
+  /*@apply text-blue-300*/
 }
 
 .markdownPreviewer__preview li {
-    list-style: inside;
+  list-style: inside;
 }
 
 .markdownPreviewer__preview ::marker {
-    display: inline;
+  display: inline;
 }
 
 .markdownPreviewer__preview pre {
-    @apply text-xs bg-black p-[16px] text-white overflow-x-auto;
+  @apply text-xs bg-black p-[16px] text-white overflow-x-auto;
 }
 
 /* END markdownPreviewer__preview */
 
 /* portfolio */
-.portfolio-item {
-    code {
-        font-family: input-mono, monospace;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .progress {
-        position: sticky;
-        top: 0;
-        margin: 0;
-        padding: 0;
-        float: right;
-
-        svg {
-            transform: translateY(0px) rotate(-90deg) translateX(0px);
-        }
-
-        .indicator {
-            stroke: #5e35b1;
-        }
-    }
-
-    .bg {
-        stroke: black;
-        opacity: 0.2;
-    }
-
-    circle {
-        stroke-dashoffset: 0;
-        stroke-width: 5%;
-        fill: whitesmoke;
-    }
-
-    section {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        div {
-            @apply w-full h-full;
-            position: relative;
-        }
-    }
+.essgee-portfolio {
+  @apply p-4 gap-4 w-full h-full mt-[80px] flex flex-col;
 }
+
+.portfolio-item {
+  @apply flex flex-col h-screen relative;
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  code {
+    font-family: input-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .progress {
+    @apply absolute top-1/2 -mr-2 -mt-2 flex right-0 h-screen;
+
+    padding: 0;
+
+    svg {
+      transform: translateY(0px) rotate(-90deg) translateX(0px);
+    }
+
+    .indicator {
+      stroke: var(--violet);
+    }
+  }
+
+  .bg {
+    stroke: black;
+    opacity: 0.2;
+  }
+
+  circle {
+    stroke-dashoffset: 0;
+    stroke-width: 5%;
+    fill: whitesmoke;
+  }
+
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      @apply w-full h-full;
+      position: relative;
+    }
+  }
+}
+
 /* END portfolio */
+
+
+.essgee-page {
+  @apply p-4 gap-4 flex flex-col mt-[100px] max-w-[1020px] m-auto justify-center w-full;
+}

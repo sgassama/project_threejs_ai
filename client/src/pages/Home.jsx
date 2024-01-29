@@ -1,52 +1,23 @@
-import {AnimatePresence, motion} from 'framer-motion';
-import {useSnapshot} from 'valtio';
-
-import state from '../store';
-import {CustomButton} from '../components';
-import {
-  headContainerAnimation,
-  headContentAnimation,
-  headTextAnimation,
-  slideAnimation,
-} from '../config/motion';
-import {useNavigate} from 'react-router-dom';
-
-const staggerChildrenVariant = {
-  initial: {
-    x: '-200%',
-    // opacity: '0',
-    transition: {
-      staggerChildren: .1,
-      delayChildren: .1,
-      damping: 1,
-    },
-  },
-  animate: {
-    x: '0%',
-    // opacity: '1',
-    transition: {
-      staggerChildren: .1,
-      delayChildren: .1,
-      damping: 1,
-    },
-  },
-};
+import {motion} from 'framer-motion';
+import {pageTransitionsAnimation} from "../config/motion.js";
+import {AboutMeContent} from "../components/AboutMeContent.tsx";
+import {SocialMediaLinks} from "../components/SocialMediaLinks.tsx";
+import React from "react";
 
 const Home = () => {
-  const snap = useSnapshot(state);
-  const navigate = useNavigate();
+    return (
+        <motion.main layout className={`essgee-page`}
+                     variants={pageTransitionsAnimation}
+                     initial="initial"
+                     animate="animate"
+                     exit="exit"
+                     key="home"
+        >
+            <AboutMeContent></AboutMeContent>
+            <SocialMediaLinks></SocialMediaLinks>
 
-  const handleNavigateToPath = (path) => {
-    navigate(path); // Navigates to the specified path
-  };
-
-  return (
-      <div className={ `pt-8 gap-8` }>
-        Home
-
-        <a href="/portfolio">PF</a>
-      </div>
-  );
+        </motion.main>
+    );
 };
 
 export default Home;
