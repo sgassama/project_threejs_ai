@@ -27,14 +27,15 @@ const portfolioItems = [
 ];
 
 const Portfolio = () => {
-    const portfolioItemsRef = useRef<HTMLElement>(null);
+    const portfolioItemsRef = useRef(null);
 
     return (
 
-        <motion.main layout className={`essgee-page`}
+        <motion.main className={`essgee-page overflow-auto h-screen`}
                      variants={pageTransitionsAnimation}
                      initial="initial"
                      animate="animate"
+                     ref={portfolioItemsRef}
                      exit="exit"
                      key="portfolio"
         >

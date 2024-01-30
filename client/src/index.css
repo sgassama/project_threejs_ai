@@ -12,7 +12,7 @@
 }
 
 html, body {
-  @apply h-full w-full text-[.975rem];
+  @apply h-full w-full text-[.975rem] overflow-hidden;
 }
 
 html {
@@ -21,7 +21,7 @@ html {
 }
 
 .essgee-bg {
-  @apply h-full w-full overflow-hidden;
+  @apply h-full w-full;
   position: fixed;
   top: 0;
   opacity: .1;
@@ -45,7 +45,7 @@ html {
 }
 
 .app {
-  @apply relative w-full h-screen overflow-hidden;
+  @apply relative w-full;
 }
 
 .home {
@@ -132,8 +132,6 @@ input[type="file"] {
   left: 0;
   width: 100%;
   height: 100%;
-  /*padding: 20px;*/
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,22 +246,22 @@ input[type="file"] {
   }
 
   .progress {
-    @apply absolute top-1/2 -mr-2 -mt-2 flex right-0 h-screen;
+    @apply sticky top-[0px] -mr-2 -mt-2 flex justify-end right-0;
 
     padding: 0;
 
     svg {
       transform: translateY(0px) rotate(-90deg) translateX(0px);
+
+      .indicator {
+        stroke: var(--violet);
+      }
     }
 
-    .indicator {
-      stroke: var(--violet);
+    .bg {
+      stroke: black;
+      opacity: 0.2;
     }
-  }
-
-  .bg {
-    stroke: black;
-    opacity: 0.2;
   }
 
   circle {
@@ -289,5 +287,5 @@ input[type="file"] {
 
 
 .essgee-page {
-  @apply p-4 gap-4 flex flex-col mt-[100px] max-w-[1020px] m-auto justify-center w-full;
+  @apply p-4 gap-4 flex flex-col mt-[100px] max-w-[1020px] m-auto w-full;
 }
