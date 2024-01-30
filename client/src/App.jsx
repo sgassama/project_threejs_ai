@@ -66,9 +66,9 @@ const AppRouter = () => {
                   }}
       ></motion.div>
 
-      <nav className="glassmorphism p-4 fixed w-full z-50 h-[80px] text-[1rem]">
+      <nav className="glassmorphism fixed w-full z-50 h-[80px] text-[1rem] m-auto">
         <div className="absolute -z-20 bg-white bg-opacity-60 inset-0"></div>
-        <ul className="flex space-x-4 items-center h-full">
+        <ul className="flex space-x-4 items-center h-full w-full max-w-[1020px] m-auto p-4">
           {
             links.map(
               (link, i) => <li key={i}>
