@@ -12,7 +12,7 @@
 }
 
 html, body {
-  @apply h-full w-full text-[1rem];
+  @apply h-full w-full text-[.975rem];
 }
 
 html {
