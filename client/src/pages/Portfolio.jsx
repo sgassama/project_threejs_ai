@@ -31,7 +31,7 @@ const Portfolio = () => {
 
     return (
 
-      <motion.main className={`essgee-page !pb-[10vh]`}
+      <motion.main className={`essgee-page !pb-[130px]`}
                      variants={pageTransitionsAnimation}
                      initial="initial"
                      animate="animate"
