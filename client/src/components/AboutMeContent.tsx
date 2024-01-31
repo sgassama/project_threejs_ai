@@ -19,7 +19,7 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
   return <motion.div className={`flex flex-col gap-4 w-full h-full`}>
 
     <motion.h1
-      className={'font-bold text-[var(--dark-grey-text)] satisfy-regular mix-blend-difference absolute top-40 left-4 z-10 text-5xl'}
+      className={'font-bold text-[var(--dark-grey-text)] satisfy-regular mix-blend-difference absolute top-52 left-8 z-10 text-5xl'}
       style={{
         y: heroTextY,
       }}
