@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15b4247e-04f3-4d0e-a76e-24f44dc72799" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/assets/hero-transparent.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/hero.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/EventLoopDemystified.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/EventLoopDemystified.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/IntroductionToRouting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/IntroductionToRouting.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/MasteringDocker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/MasteringDocker.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/NuxtStudyGuide.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/NuxtStudyGuide.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/TailwindPower.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/TailwindPower.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/UseRefPower.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/UseRefPower.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Blog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Blog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Contact.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AboutMeContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AboutMeContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SocialMediaLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SocialMediaLinks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Portfolio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Portfolio.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,29 +58,29 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/siakagassama/workspace/three-demo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.HTML&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/siakagassama/workspace/three-demo/client/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/siakagassama/workspace/three-demo/client/src/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.HTML",
+    "ts.external.directory.path": "/Users/siakagassama/workspace/three-demo/client/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/assets" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/client/src/pages" />
       <recent name="$PROJECT_DIR$/client/src/components/blog" />
       <recent name="$PROJECT_DIR$/client/public/blog" />
-      <recent name="$PROJECT_DIR$/client/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/pages" />
@@ -117,7 +113,7 @@
       <workItem from="1706295345832" duration="51000" />
       <workItem from="1706295401910" duration="18151000" />
       <workItem from="1706567999173" duration="10000" />
-      <workItem from="1706568037896" duration="20418000" />
+      <workItem from="1706568037896" duration="26134000" />
     </task>
     <servers />
   </component>

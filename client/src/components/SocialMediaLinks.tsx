@@ -5,7 +5,7 @@ import React from 'react'
 
 export function SocialMediaLinks(): React.JSX.Element {
   return (
-    <motion.ul className={`flex flex-row gap-[16px]`}>
+    <motion.ul className={`flex flex-row gap-[16px] z-[99999] py-4`}>
       <li className={`text-center text-violet-600 flex`}>
         <a href="https://github.com/sgassama/" target="_blank" aria-label="Github">
           <FontAwesomeIcon icon={faGithub}/>
