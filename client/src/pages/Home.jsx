@@ -6,7 +6,7 @@ import React from "react";
 
 const Home = () => {
     return (
-        <motion.main layout className={`essgee-page`}
+      <motion.main className={`essgee-page`}
                      variants={pageTransitionsAnimation}
                      initial="initial"
                      animate="animate"

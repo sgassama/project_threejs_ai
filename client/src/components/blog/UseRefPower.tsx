@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 
 const UseRefPower: React.FC = () => {
   return (
-    <motion.div className={`markdownPreviewer__preview essgee-page`}>
+    <motion.div className={`essgee-page !p-0 !pb-[80px] !mt-0 h-full`}>
       <h1>Unleash the Power of React's useRef Hook: Mastering State Management with Ease</h1>
 
       <p>
@@ -56,24 +56,24 @@ const UseRefPower: React.FC = () => {
         <br/>
         <pre>
           <code>
-            {`import React, { useRef } from "react";
+  {`import React, { useRef } from "react";
 
-            const MyComponent = () => {
-              const inputRef = useRef();
+  const MyComponent = () => {
+    const inputRef = useRef();
 
-              const handleClick = () => {
-                console.log(inputRef.current.value);
-              };
+    const handleClick = () => {
+      console.log(inputRef.current.value);
+    };
 
-              return (
-                <div>
-                  <input type="text" ref={inputRef} />
-                  <button onClick={handleClick}>Click Me</button>
-                </div>
-              );
-            };
+    return (
+      <div>
+        <input type="text" ref={inputRef} />
+        <button onClick={handleClick}>Click Me</button>
+      </div>
+    );
+  };
 
-            export default MyComponent;`}
+  export default MyComponent;`}
           </code>
         </pre>
         <br/>

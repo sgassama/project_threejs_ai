@@ -36,7 +36,7 @@ const Contact = () => {
   }
 
   return (
-    <motion.main layout className={`essgee-page`}
+    <motion.main className={`essgee-page`}
                  variants={pageTransitionsAnimation}
                  initial="initial"
                  animate="animate"

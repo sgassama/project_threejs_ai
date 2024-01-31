@@ -5,7 +5,7 @@ const IntroductionToRouting: React.FC = () => {
     /* routing_in_next_js */
     // @ts-ignore
     return (
-      <motion.div className={`markdownPreviewer__preview essgee-page`}>
+      <motion.div className={`essgee-page !p-0 !pb-[80px] !mt-0 h-full`}>
 
         <h1>Comprehensive Introduction to Routing in Next.js</h1>
 

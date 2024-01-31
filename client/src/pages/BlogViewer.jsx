@@ -15,7 +15,7 @@ export const BlogViewer = () => {
   const temp = !!slug && slug || temp;
 
   return (
-    <motion.div className="markdownPreviewer"
+    <motion.main className={`markdownPreviewer essgee-page !overflow-hidden`}
                 variants={pageTransitionsAnimation}
                 initial="initial"
                 animate="animate"
@@ -30,6 +30,6 @@ export const BlogViewer = () => {
         <IntroductionToRouting></IntroductionToRouting>} {temp === 'nuxt-sg' && <NuxtStudyGuide></NuxtStudyGuide>}
       </div>
       <hr className={`mt-8`}/>
-    </motion.div>
+    </motion.main>
   )
 }
