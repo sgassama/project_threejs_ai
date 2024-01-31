@@ -48,7 +48,7 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
 
 
     <div
-      className="about-me-wrapper z-[99999] bg-white h-fit mt-[500px] fixed inset-0 w-full flex flex-col justify-start gap-4 p-4">
+      className="about-me-wrapper overflow-scroll sm:overflow-hidden z-[99999] bg-white h-fit mt-[500px] fixed inset-0 w-full flex flex-col justify-start gap-4 p-4">
  <span className={``}>
 
             <span className="text-violet-600 font-bold inline"> Hello! I'm Siaka Gassama</span>, a seasoned full-stack developer with a passion for building and tinkering. With over 9 years of hands-on experience, I've mastered the art of creating and maintaining diverse APIs and websites/applications. My expertise extends to automating mission-critical deployments through the implementation of configuration management, CI/CD, and DevOps processes.
