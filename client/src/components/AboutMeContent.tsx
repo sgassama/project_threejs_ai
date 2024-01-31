@@ -6,8 +6,6 @@ import {SkillSetList} from './SkillSetList.tsx'
 import {SocialMediaLinks} from "./SocialMediaLinks.tsx";
 
 export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.Element {
-  // const ref = useRef(null);
-  console.log(`***** scrollRef ***** siaka ヽ(⌐■_■)ノ♪♬ *=*=*=*=*=*=>> \r\n`, scrollRef);
   const {scrollYProgress} = useScroll({
     target: scrollRef,
     container: scrollRef,
@@ -19,7 +17,7 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
 
   return <motion.div className={`flex flex-col justify-start gap-4 w-full h-full`}>
 
-    <motion.h1 className={'font-bold text-[var(--dark-grey-text)] satisfy-regular absolute top-40 left-4 z-10 text-5xl'}
+    <motion.h1 className={'font-bold text-[var(--dark-grey-text)] satisfy-regular mix-blend-difference absolute top-40 left-4 z-10 text-5xl'}
                style={{
                  y: heroTextY,
                }}
@@ -49,7 +47,7 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
 
 
     <div
-      className="about-me-wrapper z-[99999] bg-white h-fit mt-[550px] fixed inset-0 w-full flex flex-col justify-start gap-4 p-4">
+      className="about-me-wrapper z-[99999] bg-white h-fit mt-[500px] fixed inset-0 w-full flex flex-col justify-start gap-4 p-4">
  <span className={``}>
 
             <span className="text-violet-600 font-bold inline"> Hello! I'm Siaka Gassama</span>, a seasoned full-stack developer with a passion for building and tinkering. With over 9 years of hands-on experience, I've mastered the art of creating and maintaining diverse APIs and websites/applications. My expertise extends to automating mission-critical deployments through the implementation of configuration management, CI/CD, and DevOps processes.

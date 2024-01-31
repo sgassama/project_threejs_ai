@@ -45,7 +45,7 @@ const Portfolio = () => {
             ></PortfolioItem>)}
 
             <small className={`w-full flex h-[50px] sticky bottom-[-50px] justify-center text-violet-600 glassmorphism p-4`}>
-                References and work history available upon request
+                References and full work history available upon request
             </small>
 
         </motion.main>
