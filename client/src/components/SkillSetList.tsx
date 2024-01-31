@@ -20,7 +20,7 @@ export function SkillSetList(): JSX.Element {
       x: '-100vw',
     },
     visible: {
-      x: 0,
+      x: 0
     },
   }
 
@@ -48,8 +48,8 @@ export function SkillSetList(): JSX.Element {
         initial={'hidden'}
         variants={listVariant}
         whileInView={'visible'}
-        exit={'visible'}
-        transition={{duration: .3, delay: i * .2}}
+        exit={'hidden'}
+        transition={{duration: .25, delay: i * .03}}
         viewport={{once: true}}
       >
         {skill}
