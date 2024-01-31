@@ -7,6 +7,7 @@ import {SocialMediaLinks} from "./SocialMediaLinks.tsx";
 
 export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.Element {
   const {scrollYProgress} = useScroll({
+    layoutEffect: false,
     target: scrollRef,
     container: scrollRef,
     offset: ['start', 'end start'],
