@@ -24,7 +24,7 @@ html {
   @apply h-full w-full;
   position: fixed;
   top: 0;
-  opacity: .1;
+  opacity: .03;
   background-image: url('assets/bg.svg');
   background-repeat: repeat-x;
   z-index: -99;
