@@ -9,7 +9,7 @@ export function ContactMeButton({isDisabled = false}: {
         <motion.div layout className="label w-full text-xl h-20 flex flex-col justify-center outline-0">
             <button disabled={isDisabled}
                     type="submit"
-                    className="w-fit px-4 py-2.5 font-bold transition-all"
+                    className="w-fit py-2.5 font-bold transition-all"
                     style={{
                         color: isDisabled ? 'dimgrey' : 'var(--violet)',
                         opacity: isDisabled ? .5 : 1,

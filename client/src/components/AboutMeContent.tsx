@@ -5,7 +5,7 @@ import {headContainerAnimation} from '../config/motion.js'
 import {SkillSetList} from './SkillSetList.tsx'
 
 export function AboutMeContent(): JSX.Element {
-  return <motion.div {...headContainerAnimation} className={`flex flex-col justify-start gap-4 z-50  h-full`}>
+  return <motion.div {...headContainerAnimation} className={`flex flex-col justify-start gap-4 z-50`}>
         <span className={``}>
 
             <span className="text-violet-600 font-bold inline"> Hello! I'm Siaka Gassama</span>, a seasoned full-stack developer with a passion for building and tinkering. With over 9 years of hands-on experience, I've mastered the art of creating and maintaining diverse APIs and websites/applications. My expertise extends to automating mission-critical deployments through the implementation of configuration management, CI/CD, and DevOps processes.

@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 
 const UseRefPower: React.FC = () => {
   return (
-    <motion.div className={`essgee-page !p-0 !pb-[80px] !mt-0 h-full`}>
+    <motion.div className={`essgee-page !p-0 !mt-0 h-full`}>
       <h1>Unleash the Power of React's useRef Hook: Mastering State Management with Ease</h1>
 
       <p>
