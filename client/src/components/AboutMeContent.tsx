@@ -16,7 +16,7 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
   const heroTextY = useTransform(scrollYProgress, [0, 1], ['0%', '900%']);
 
 
-  return <motion.div className={`flex flex-col justify-start gap-4 w-full h-full`}>
+  return <motion.div className={`flex flex-col justify-start gap-4 w-full h-screen`}>
 
     <motion.h1
       className={'font-bold text-[var(--dark-grey-text)] satisfy-regular mix-blend-difference absolute top-40 left-4 z-10 text-5xl'}
