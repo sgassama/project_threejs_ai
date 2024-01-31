@@ -36,7 +36,7 @@ export function SkillSetList(): JSX.Element {
   }
 
   return <motion.ul ref={skillSetRef}
-                    className={'skill-set justify-center align-middle border-violet-800 bg-gray-100 bg-opacity-100 text-[var(--dark-grey-text)] list-item h-fit'}
+                    className={'skill-set flex justify-center align-middle border-violet-800 bg-gray-100 bg-opacity-100 text-[var(--dark-grey-text)] list-item h-fit'}
                     variants={boxVariant}
                     animate={'visible'}
                     initial="hidden"

@@ -16,7 +16,7 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
   const heroTextY = useTransform(scrollYProgress, [0, 1], ['0%', '900%']);
 
 
-  return <motion.div className={`flex flex-col justify-start gap-4 w-full h-screen`}>
+  return <motion.div className={`flex flex-col gap-4 w-full h-full`}>
 
     <motion.h1
       className={'font-bold text-[var(--dark-grey-text)] satisfy-regular mix-blend-difference absolute top-40 left-4 z-10 text-5xl'}
@@ -27,7 +27,7 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
       Siaka-G DEV
     </motion.h1>
 
-    <motion.div className={'absolute inset-0 z-0 -top-20'}
+    <motion.div className={'absolute inset-0 z-0'}
                 style={{
                   y: heroImgY,
                   backgroundImage: 'url("hero.jpg")',
@@ -37,7 +37,7 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
     >
 
     </motion.div>
-    <motion.div className={'absolute inset-0 z-20 -top-20'}
+    <motion.div className={'absolute inset-0 z-20'}
                 style={{
                   backgroundImage: 'url("hero-transparent.jpg")',
                   backgroundPosition: 'bottom',
@@ -49,20 +49,20 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
 
 
     <div
-      className="about-me-wrapper z-[99999] bg-white h-screen sm:h-fit mt-[500px] fixed inset-0 w-full flex flex-col justify-start gap-4 p-4">
- <span className={``}>
+      className="about-me-wrapper z-[99999] bg-white h-fit sm:h-fit mt-[500px] fixed inset-0 w-full flex flex-col justify-start gap-4 p-4">
+ <span className={`block`}>
 
             <span className="text-violet-600 font-bold inline"> Hello! I'm Siaka Gassama</span>, a seasoned full-stack developer with a passion for building and tinkering. With over 9 years of hands-on experience, I've mastered the art of creating and maintaining diverse APIs and websites/applications. My expertise extends to automating mission-critical deployments through the implementation of configuration management, CI/CD, and DevOps processes.
         </span>
-      <span className={``}>
+      <span className={`flex flex-col`}>
             Beyond the coding realm, I'm an enthusiastic sports fan, particularly of the NBA, and have a deep appreciation for music. What sets me apart is my multilingual proficiency, as I speak three languages <br/> <span
         className={`text-violet-600`}>◕ ◡ ◕.</span>
         </span>
-      <span className={``}>
+      <span className={`flex flex-col`}>
             Here's a snapshot of my skill-set:
         </span>
       <SkillSetList/>
-      <span className={`text-violet-600 font-bold`}>
+      <span className={`text-violet-600 font-bold flex flex-col`}>
             Let's collaborate and bring your software projects to life!
         <SocialMediaLinks></SocialMediaLinks>
         </span>

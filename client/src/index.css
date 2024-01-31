@@ -13,7 +13,7 @@
 }
 
 html, body {
-  @apply h-screen w-full text-[.95rem] sm:overflow-hidden overflow-auto;
+  @apply h-screen w-full text-[.95rem];
 }
 
 html {
@@ -294,5 +294,5 @@ input[type="file"] {
 
 
 .essgee-page {
-  @apply px-4 gap-4 flex flex-col mt-[13vh] max-w-[1020px] m-auto w-full overflow-y-auto overflow-x-hidden h-[calc(90vh-0px)];
+  @apply p-4 gap-4 flex flex-col max-w-[1020px] m-auto !mt-[80px] w-full overflow-y-auto overflow-x-hidden h-[100vh];
 }
