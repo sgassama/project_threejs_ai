@@ -31,7 +31,7 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
                 layout
                 style={{
                   y: heroImgY,
-                  backgroundImage: 'url("hero.jpg")',
+                  backgroundImage: 'url("hero.webp")',
                   backgroundPosition: 'bottom',
                   backgroundSize: 'cover',
                 }}
@@ -41,7 +41,7 @@ export function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.
     <motion.div className={'absolute inset-4 z-20'}
                 layout
                 style={{
-                  backgroundImage: 'url("hero-transparent.jpg")',
+                  backgroundImage: 'url("hero-transparent.webp")',
                   backgroundPosition: 'bottom',
                   backgroundSize: 'cover',
                 }}
