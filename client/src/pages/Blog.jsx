@@ -43,12 +43,7 @@ const Contact = () => {
                  exit="exit"
                  key="blog"
     >
-      <motion.ul className={`flex flex-col h-full w-full gap-4`}
-                 initial={{x: '0%'}}
-                 animate={{
-                   transition: {duration: .3},
-                 }}
-      >
+      <motion.ul className={`flex flex-col h-full w-full gap-4`}>
         <motion.li className={`flex w-full text-violet-400 underline cursor-pointer`}>
           <Link className={`text-[var(--dark-grey-text)] visited:text-violet-600`} to="nuxt-sg">
             An Introduction to Nuxt.js

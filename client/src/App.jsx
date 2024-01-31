@@ -58,7 +58,7 @@ const AppRouter = () => {
 
     <div className="flex flex-col">
 
-      <motion.div className="essgee-bg transition-all duration-1000 delay-100 overflow-hidden"
+      <motion.div className="essgee-bg transition-all delay-100 overflow-hidden"
                   id={`essgee-bg`}
       ></motion.div>
 

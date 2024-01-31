@@ -70,14 +70,14 @@ export const headContentAnimation = {
 };
 
 export const headContainerAnimation = {
-    initial: {x: -100, opacity: 0, transition: {...transition, delay: 0.5}},
+    initial: {x: -100, opacity: 0, transition: {...transition, delay: 0}},
     animate: {x: 0, opacity: 1, transition: {...transition, delay: 0}},
     exit: {x: -100, opacity: 0, transition: {...transition, delay: 0}},
 };
 
 export const pageTransitionsAnimation = {
     initial: {
-        x: '-100%',
+        x: '-30%',
         opacity: 0,
         transition: {...transition, delay: 0},
     },
@@ -87,7 +87,7 @@ export const pageTransitionsAnimation = {
         transition: {...transition, delay: 0},
     },
     exit: {
-        x: '100%',
+        x: '30%',
         opacity: 0,
         transition: {...transition, delay: 0},
     },

@@ -58,6 +58,7 @@ const Contact = () => {
                  animate="animate"
                  exit="exit"
                  key="contact"
+                 layout
     >
       <ContactMeForm onSubmit={handleSubmit}
                      formData={formData}
