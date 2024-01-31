@@ -13,11 +13,11 @@
 }
 
 html, body {
-  @apply h-full w-full text-[.95rem];
+  @apply h-screen w-full text-[.95rem];
 }
 
 body {
-  @apply overflow-hidden;
+  @apply sm:overflow-hidden;
 }
 
 html {
