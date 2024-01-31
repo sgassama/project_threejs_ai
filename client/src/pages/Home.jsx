@@ -1,13 +1,12 @@
 import {motion} from 'framer-motion';
 import {pageTransitionsAnimation} from "../config/motion.js";
 import {AboutMeContent} from "../components/AboutMeContent.tsx";
-import {SocialMediaLinks} from "../components/SocialMediaLinks.tsx";
 import React, {useRef} from "react";
 
 const Home = () => {
   const ref = useRef(null);
   return (
-    <motion.main className={`essgee-page !pb-[130px]`}
+    <motion.main className={`essgee-page`}
                  variants={pageTransitionsAnimation}
                  initial="initial"
                  animate="animate"
