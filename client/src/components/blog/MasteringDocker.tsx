@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 
 const DockerGuide: React.FC = () => {
     return (
-      <motion.div className={`essgee-page !p-0 !mt-0 h-full`}>
+      <motion.div className={`essgee-page !p-0 !mt-0 h-full !pb-4`}>
         <h1 className={`flex flex-col`}>Mastering Docker: Elevating Your Containerization Expertise</h1>
 
         <section className={`flex flex-col`}>

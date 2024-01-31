@@ -31,7 +31,7 @@ const Portfolio = () => {
 
     return (
 
-        <motion.main className={`essgee-page`}
+      <motion.main className={`essgee-page !pb-4`}
                      variants={pageTransitionsAnimation}
                      initial="initial"
                      animate="animate"
@@ -44,7 +44,7 @@ const Portfolio = () => {
                                                               item={pfItem}
             ></PortfolioItem>)}
 
-            <small className={`w-full flex h-[50px] sticky bottom-0.5 justify-center text-violet-600 glassmorphism p-4`}>
+            <small className={`w-full flex h-[50px] sticky bottom-0 justify-center text-violet-600 glassmorphism p-4`}>
                 References and work history available upon request
             </small>
 
