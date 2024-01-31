@@ -1,6 +1,6 @@
 export const transition = {
     type: "spring",
-    duration: 0.65,
+    duration: 0.35,
     // staggerChildren: .1,
     // delayChildren: .1,
     // damping: 40,
@@ -77,7 +77,7 @@ export const headContainerAnimation = {
 
 export const pageTransitionsAnimation = {
     initial: {
-        x: '-150%',
+        x: '-100%',
         opacity: 0,
         transition: {...transition, delay: 0},
     },
@@ -87,7 +87,7 @@ export const pageTransitionsAnimation = {
         transition: {...transition, delay: 0},
     },
     exit: {
-        x: '150%',
+        x: '100%',
         opacity: 0,
         transition: {...transition, delay: 0},
     },

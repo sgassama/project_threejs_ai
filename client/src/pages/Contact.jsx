@@ -52,7 +52,7 @@ const Contact = () => {
   }
 
   return (
-    <motion.main className={`essgee-page`}
+    <motion.main className={`essgee-page !pb-[100px]`}
                  variants={pageTransitionsAnimation}
                  initial="initial"
                  animate="animate"
