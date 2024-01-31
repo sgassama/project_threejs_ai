@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 
 const TailwindPower: React.FC = () => {
     return (
-      <motion.div className={`essgee-page !p-0 !mt-0 h-full !pb-4`}>
+      <motion.div className={`essgee-page !p-0 !mt-0 h-full !pb-[80px]`}>
         <h1>The Power of Tailwind CSS: Revolutionizing Front-End Development with Utility-First Workflow</h1>
 
         <p>
