@@ -287,5 +287,5 @@ input[type="file"] {
 
 
 .essgee-page {
-  @apply px-4 gap-4 flex flex-col mt-[100px] max-w-[1020px] m-auto w-full overflow-y-auto  overflow-x-hidden h-[calc(100vh-120px)];
+  @apply px-4 gap-4 flex flex-col mt-[100px] max-w-[1020px] m-auto w-full overflow-y-auto overflow-x-hidden h-[calc(100vh-120px)];
 }

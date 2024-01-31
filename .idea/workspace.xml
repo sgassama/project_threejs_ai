@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="15b4247e-04f3-4d0e-a76e-24f44dc72799" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AboutMeContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AboutMeContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ContactMeButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ContactMeButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SkillSetList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SkillSetList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/SocialMediaLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SocialMediaLinks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/EventLoopDemystified.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/EventLoopDemystified.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/IntroductionToRouting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/IntroductionToRouting.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/MasteringDocker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/MasteringDocker.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/NuxtStudyGuide.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/NuxtStudyGuide.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/TailwindPower.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/TailwindPower.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/blog/UseRefPower.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/blog/UseRefPower.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +109,7 @@
       <workItem from="1706295345832" duration="51000" />
       <workItem from="1706295401910" duration="18151000" />
       <workItem from="1706567999173" duration="10000" />
-      <workItem from="1706568037896" duration="14505000" />
+      <workItem from="1706568037896" duration="14862000" />
     </task>
     <servers />
   </component>
