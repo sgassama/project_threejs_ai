@@ -58,7 +58,7 @@ const AppRouter = () => {
 
     <div className="flex flex-col">
 
-      <motion.div className="essgee-bg transition-all duration-1000 delay-150 overflow-hidden"
+      <motion.div className="essgee-bg transition-all duration-750 delay-150 overflow-hidden"
                   id={`essgee-bg`}
                   style={{
                     backgroundColor: location.pathname === '/' ? 'rgba(4, 171, 151,0.6)' : 'rgba(149,13,224,0.6)',
@@ -66,7 +66,7 @@ const AppRouter = () => {
                   }}
       ></motion.div>
 
-      <nav className="glassmorphism fixed w-full z-50 h-[80px] text-[1rem] m-auto">
+      <nav className="glassmorphism fixed w-full z-50 h-[10vh] text-[1rem] m-auto">
         <div className="absolute -z-20 bg-white bg-opacity-60 inset-0"></div>
         <ul className="flex space-x-4 items-center h-full w-full max-w-[1020px] m-auto p-4">
           {

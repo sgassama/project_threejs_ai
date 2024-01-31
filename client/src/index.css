@@ -12,7 +12,7 @@
 }
 
 html, body {
-  @apply h-full w-full text-[.975rem] overflow-hidden;
+  @apply h-full w-full text-[.95rem] overflow-hidden;
 }
 
 html {
@@ -234,9 +234,9 @@ input[type="file"] {
   @apply flex flex-col h-screen relative;
 
   h1 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    @apply absolute;
+    font-size: 2rem;
+    /*line-height: 2.25rem;*/
+    @apply absolute h-[50px] flex align-middle;
   }
 
   code {
@@ -246,7 +246,7 @@ input[type="file"] {
   }
 
   .progress {
-    @apply sticky top-[0px] -mr-2 -mt-2 flex justify-end right-0;
+    @apply sticky top-[0px] flex justify-end right-0;
 
     padding: 0;
 
@@ -287,5 +287,5 @@ input[type="file"] {
 
 
 .essgee-page {
-  @apply px-4 gap-4 flex flex-col mt-[100px] max-w-[1020px] m-auto w-full overflow-y-auto overflow-x-hidden h-[calc(100vh-120px)];
+  @apply px-4 gap-4 flex flex-col mt-[100px] max-w-[1020px] m-auto w-full overflow-y-auto overflow-x-hidden h-[calc(90vh-0px)];
 }
