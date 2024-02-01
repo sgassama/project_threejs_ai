@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {Link, Route, Routes, useLocation} from "react-router-dom";
-import Portfolio from "pages/Portfolio.jsx";
-import Home from "pages/Home.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import Home from "./pages/Home.jsx";
 import {AnimatePresence, motion} from "framer-motion";
-import Contact from "@pages/Contact.jsx";
-import Blog from "pages/Blog.jsx";
-import {BlogViewer} from "pages/BlogViewer.jsx";
-import {Logo} from "@components/Logo";
+import Contact from "./pages/Contact.jsx";
+import Blog from "./pages/Blog.jsx";
+import {BlogViewer} from "./pages/BlogViewer.jsx";
+import {Logo} from "./components/Logo";
 import {Toaster} from "react-hot-toast";
 
 
