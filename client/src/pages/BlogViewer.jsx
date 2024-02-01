@@ -15,7 +15,7 @@ export const BlogViewer = () => {
   const temp = !!slug && slug || temp;
 
   return (
-    <motion.main className={`markdownPreviewer essgee-page !overflow-hidden`}
+    <motion.main className={`markdownPreviewer essgee-page`}
                 variants={pageTransitionsAnimation}
                 initial="initial"
                 animate="animate"
