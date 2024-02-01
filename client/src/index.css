@@ -195,5 +195,5 @@ html {
 /* END portfolio */
 
 .essgee-page {
-  @apply p-4 gap-4 flex flex-col max-w-[1020px] m-auto mt-[80px] w-full overflow-y-auto overflow-x-hidden h-[100rvh] mb-24 sm:mb-4;
+  @apply p-4 gap-4 flex flex-col max-w-[1020px] m-auto mt-4 w-full overflow-y-auto overflow-x-hidden h-[100rvh] mb-24 sm:mb-4 pt-[80px];
 }
