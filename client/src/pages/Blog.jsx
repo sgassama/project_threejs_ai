@@ -1,40 +1,8 @@
 import {motion} from 'framer-motion';
 import {pageTransitionsAnimation} from "../config/motion.js";
-import {useState} from "react";
 import {Link} from "react-router-dom";
 
-const Contact = () => {
-
-  const handleNavigateToPath = (path) => {
-    // navigate(path); // Navigates to the specified path
-  };
-
-  const emptyForm = {
-    name: '',
-    email: '',
-    message: '',
-  };
-  const [formData, setFormData] = useState(emptyForm);
-  const data = {
-    requesterName: formData.name,
-    requesterEmail: formData.email,
-    requesterMessage: formData.message,
-  };
-  const shouldDisableForm = !formData.name || !formData.email ||
-    !formData.message;
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-  }
-
-  const handleChange = (e) => {
-    const {name, value} = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  }
-
+const Blog = () => {
   return (
     <motion.main className={`essgee-page !pb-[130px]`}
                  variants={pageTransitionsAnimation}
@@ -82,4 +50,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Blog;

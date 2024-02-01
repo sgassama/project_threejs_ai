@@ -12,7 +12,8 @@ export function SocialMediaLinks(): React.JSX.Element {
         </a>
       </li>
       <li className={`text-center text-violet-600 flex`}>
-        <a href="https://stackoverflow.com/users/2989376/call-de-amberlamps" target="_blank" aria-label="Stack Overflow">
+        <a href="https://stackoverflow.com/users/2989376/call-de-amberlamps" target="_blank"
+           aria-label="Stack Overflow">
           <FontAwesomeIcon icon={faStackOverflow}/>
         </a>
       </li>

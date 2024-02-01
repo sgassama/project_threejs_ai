@@ -12,11 +12,6 @@ const Contact = () => {
     message: '',
   };
   const [formData, setFormData] = useState(emptyForm);
-  const data = {
-    requesterName: formData.name,
-    requesterEmail: formData.email,
-    requesterMessage: formData.message,
-  };
   const shouldDisableForm = !formData.name || !formData.email ||
     !formData.message;
 
@@ -27,9 +22,9 @@ const Contact = () => {
     const toastOpts = {duration: 3000};
     try {
       await axios.post(`/api/send-contact-email`, {
-        requesterName: data.requesterName,
-        requesterEmail: data.requesterEmail,
-        requesterMessage: data.requesterMessage,
+        requesterName: formData.name,
+        requesterEmail: formData.email,
+        requesterMessage: formData.message,
         headers,
       });
       toast.success('Your email has been sent!', toastOpts);

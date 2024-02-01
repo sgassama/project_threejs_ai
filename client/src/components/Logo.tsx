@@ -2,37 +2,37 @@ import {motion} from 'framer-motion'
 import React from 'react'
 
 export function Logo(): JSX.Element {
-    const handleClick = () => {
-    }
-    const background = {}
+  const handleClick = () => {
+  }
+  const background = {}
 
-    return <motion.header style={background}
-                          onTap={handleClick}
-                          className="essgee-header absolute top-0 z-[99999] right-0 flex flex-row items-center justify-center max-w-[1020px] overflow-hidden"
+  return <motion.header style={background}
+                        onTap={handleClick}
+                        className="essgee-header absolute top-0 z-[99999] right-0 flex flex-row items-center justify-center overflow-hidden"
+  >
+    <motion.svg className={'flex'}
+                version="1.0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="80px"
+                height="80px"
+                viewBox="0 0 1200.000000 1200.000000"
+                preserveAspectRatio="xMidYMid meet"
     >
-        <motion.svg className={'flex'}
-                    version="1.0"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="80px"
-                    height="80px"
-                    viewBox="0 0 1200.000000 1200.000000"
-                    preserveAspectRatio="xMidYMid meet"
-        >
 
-            <motion.g transform="translate(0.000000,1200.000000) scale(0.1,-0.1)"
-                      fill="#eee" stroke="none"
-                      className={`bg-white`}
-            >
-                <motion.path fill="transparent"
-                             strokeWidth="190"
-                             stroke="#c1c1c1"
-                             strokeLinecap="round"
-                             pathLength="0"
-                             opacity="0"
-                             initial={{pathLength: 0, opacity: 0}}
-                             animate={{pathLength: 1, opacity: .7}}
-                             transition={{duration: 2, delay: 0}}
-                             d="M1830 10232 c-22 -12 -44 -35 -57 -62 l-23 -44 0 -2443 0 -2443 4250
+      <motion.g transform="translate(0.000000,1200.000000) scale(0.1,-0.1)"
+                fill="#eee" stroke="none"
+                className={`bg-white`}
+      >
+        <motion.path fill="transparent"
+                     strokeWidth="190"
+                     stroke="#c1c1c1"
+                     strokeLinecap="round"
+                     pathLength="0"
+                     opacity="0"
+                     initial={{pathLength: 0, opacity: 0}}
+                     animate={{pathLength: 1, opacity: .7}}
+                     transition={{duration: 2, delay: 0}}
+                     d="M1830 10232 c-22 -12 -44 -35 -57 -62 l-23 -44 0 -2443 0 -2443 4250
 0 4250 0 0 2448 c0 2349 -1 2449 -18 2482 -12 22 -35 44 -62 58 l-44 22 -4131
 0 c-3978 0 -4132 -1 -4165 -18z m1121 -310 c171 -61 289 -208 310 -389 6 -46
 8 -800 7 -1848 -3 -1625 -5 -1774 -20 -1817 -39 -109 -129 -218 -218 -263
@@ -56,18 +56,18 @@ c193 -115 359 -221 370 -234 38 -49 40 -80 37 -652 -3 -551 -3 -555 -25 -585
 -151 -245 -299 -296 -51 -18 -84 -20 -285 -20 -172 0 -238 4 -277 15 -177 52
 -298 200 -324 395 -7 52 -10 153 -6 260 4 147 8 184 27 232 59 158 200 273
 365 298 72 11 359 11 433 0z"
-                />
-                <motion.path
-                    fill="black"
-                    strokeWidth="100"
-                    stroke="#000"
-                    strokeLinecap="round"
-                    pathLength="0"
-                    opacity="0"
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{duration: 2, delay: 0}}
-                    d="M1830 10232 c-22 -12 -44 -35 -57 -62 l-23 -44 0 -2443 0 -2443 4250
+        />
+        <motion.path
+          fill="black"
+          strokeWidth="100"
+          stroke="#000"
+          strokeLinecap="round"
+          pathLength="0"
+          opacity="0"
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{duration: 2, delay: 0}}
+          d="M1830 10232 c-22 -12 -44 -35 -57 -62 l-23 -44 0 -2443 0 -2443 4250
 0 4250 0 0 2448 c0 2349 -1 2449 -18 2482 -12 22 -35 44 -62 58 l-44 22 -4131
 0 c-3978 0 -4132 -1 -4165 -18z m1121 -310 c171 -61 289 -208 310 -389 6 -46
 8 -800 7 -1848 -3 -1625 -5 -1774 -20 -1817 -39 -109 -129 -218 -218 -263
@@ -91,100 +91,100 @@ c193 -115 359 -221 370 -234 38 -49 40 -80 37 -652 -3 -551 -3 -555 -25 -585
 -151 -245 -299 -296 -51 -18 -84 -20 -285 -20 -172 0 -238 4 -277 15 -177 52
 -298 200 -324 395 -7 52 -10 153 -6 260 4 147 8 184 27 232 59 158 200 273
 365 298 72 11 359 11 433 0z"
-                />
-                <motion.path
-                    fill="#000"
-                    strokeWidth="20"
-                    stroke="#000"
-                    strokeLinecap="round"
-                    opacity="0"
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    transition={{duration: 2}}
-                    d="M2444 9630 c-26 -10 -72 -65 -79 -93 -3 -12 -4 -828 -3 -1814 l3
+        />
+        <motion.path
+          fill="#000"
+          strokeWidth="20"
+          stroke="#000"
+          strokeLinecap="round"
+          opacity="0"
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{duration: 2}}
+          d="M2444 9630 c-26 -10 -72 -65 -79 -93 -3 -12 -4 -828 -3 -1814 l3
 -1792 30 -31 c44 -46 79 -52 292 -48 188 3 192 3 218 28 15 14 34 39 43 55 16
 28 17 173 17 1815 0 1739 0 1786 -19 1817 -11 17 -36 41 -56 52 -35 19 -53 21
 -231 20 -107 0 -203 -4 -215 -9z"
-                />
-                <motion.path
-                    fill="#111"
-                    strokeWidth="20"
-                    stroke="#000"
-                    strokeLinecap="round"
-                    d="M9100 9614 c-64 -54 -65 -62 -65 -354 0 -249 1 -267 20 -300 40 -67
+        />
+        <motion.path
+          fill="#111"
+          strokeWidth="20"
+          stroke="#000"
+          strokeLinecap="round"
+          d="M9100 9614 c-64 -54 -65 -62 -65 -354 0 -249 1 -267 20 -300 40 -67
 67 -75 275 -78 177 -3 187 -2 229 20 80 41 82 51 79 375 l-3 281 -25 27 c-48
 52 -64 55 -279 55 l-199 0 -32 -26z"
-                />
-                <motion.path
-                    fill="black"
-                    strokeWidth="20"
-                    stroke="#888"
-                    strokeLinecap="round" d="M5771 8890 c-117 -70 -218 -133 -223 -138 -6 -6 71 -58 217 -146 124
+        />
+        <motion.path
+          fill="black"
+          strokeWidth="20"
+          stroke="#888"
+          strokeLinecap="round" d="M5771 8890 c-117 -70 -218 -133 -223 -138 -6 -6 71 -58 217 -146 124
 -75 231 -136 237 -136 11 0 426 246 446 265 11 10 -28 38 -213 149 -124 75
 -232 136 -238 136 -7 -1 -108 -59 -226 -130z"
-                />
-                <path fill="yellow" d="M5392 8118 l3 -352 220 -133 c121 -73 223 -132 228 -133 4 0 7 159 7
+        />
+        <path fill="yellow" d="M5392 8118 l3 -352 220 -133 c121 -73 223 -132 228 -133 4 0 7 159 7
 353 l-1 352 -222 133 c-123 72 -226 132 -230 132 -4 0 -6 -158 -5 -352z"
-                />
-                <path fill="red" d="M6368 8337 l-218 -132 0 -352 c0 -194 3 -353 7 -353 4 0 107 60 230
+        />
+        <path fill="red" d="M6368 8337 l-218 -132 0 -352 c0 -194 3 -353 7 -353 4 0 107 60 230
 133 l222 132 1 353 c0 275 -3 352 -12 351 -7 0 -111 -60 -230 -132z"
-                />
-                <path d="M5016 7374 c-121 -74 -224 -138 -228 -142 -7 -7 437 -282 456 -282 2
+        />
+        <path d="M5016 7374 c-121 -74 -224 -138 -228 -142 -7 -7 437 -282 456 -282 2
 0 107 61 231 136 185 111 224 139 213 149 -11 10 -433 264 -448 270 -3 1 -104
 -58 -224 -131z"
-                />
-                <path fill="green" d="M6528 7371 c-125 -75 -228 -139 -228 -142 0 -4 103 -68 229 -144 211
+        />
+        <path fill="green" d="M6528 7371 c-125 -75 -228 -139 -228 -142 0 -4 103 -68 229 -144 211
 -125 231 -136 253 -124 54 29 438 260 438 264 0 3 -440 271 -460 280 -3 1
 -107 -59 -232 -134z"
-                />
-                <path fill="pink" d="M6150 6606 l0 -355 226 -135 c124 -75 227 -136 230 -136 2 0 4 159 4
+        />
+        <path fill="pink" d="M6150 6606 l0 -355 226 -135 c124 -75 227 -136 230 -136 2 0 4 159 4
 353 l0 352 -192 115 c-105 63 -209 125 -230 138 l-38 23 0 -355z"
-                />
-                <path d="M7133 6824 l-223 -135 0 -355 c0 -195 3 -354 8 -354 4 1 106 60 227
+        />
+        <path d="M7133 6824 l-223 -135 0 -355 c0 -195 3 -354 8 -354 4 1 106 60 227
 133 l220 133 3 357 c1 196 -1 357 -5 356 -5 0 -108 -61 -230 -135z"
-                />
-                <path fill="green" d="M4630 6601 l0 -350 226 -135 c124 -75 227 -136 230 -136 2 0 4 159 4
+        />
+        <path fill="green" d="M4630 6601 l0 -350 226 -135 c124 -75 227 -136 230 -136 2 0 4 159 4
 354 l0 353 -219 132 c-121 72 -224 131 -230 131 -8 0 -11 -106 -11 -349z"
-                />
-                <motion.path fill="red"
-                             strokeWidth="100"
-                             stroke="#000"
-                             strokeLinecap="round"
-                             pathLength="0"
-                             opacity="0"
-                             initial={{opacity: 0}}
-                             animate={{opacity: 1}}
-                             transition={{duration: 2, delay: 0}}
-                             d="M5608 6818 l-218 -131 0 -353 c0 -195 3 -354 8 -354 4 1 106 60 227
+        />
+        <motion.path fill="red"
+                     strokeWidth="100"
+                     stroke="#000"
+                     strokeLinecap="round"
+                     pathLength="0"
+                     opacity="0"
+                     initial={{opacity: 0}}
+                     animate={{opacity: 1}}
+                     transition={{duration: 2, delay: 0}}
+                     d="M5608 6818 l-218 -131 0 -353 c0 -195 3 -354 8 -354 4 1 106 60 227
 133 l220 133 3 352 c2 278 0 352 -10 352 -7 -1 -111 -60 -230 -132z"
-                />
-                <motion.path fill="yellow"
-                             strokeWidth="100"
-                             stroke="#000"
-                             strokeLinecap="round"
-                             pathLength="0"
-                             opacity="0"
-                             initial={{opacity: 0}}
-                             animate={{opacity: 0.7}}
-                             transition={{duration: 2, delay: 0}}
-                             d="M9110 7953 c-69 -48 -83 -106 -79 -322 4 -141 6 -159 27 -192 41 -66
+        />
+        <motion.path fill="yellow"
+                     strokeWidth="100"
+                     stroke="#000"
+                     strokeLinecap="round"
+                     pathLength="0"
+                     opacity="0"
+                     initial={{opacity: 0}}
+                     animate={{opacity: 0.7}}
+                     transition={{duration: 2, delay: 0}}
+                     d="M9110 7953 c-69 -48 -83 -106 -79 -322 4 -141 6 -159 27 -192 41 -66
 71 -74 289 -74 213 0 221 2 271 76 23 33 23 38 20 241 -3 205 -3 207 -28 233
 -48 52 -64 55 -277 55 -172 0 -202 -2 -223 -17z"
-                />
-                <motion.path fill="red"
-                             strokeWidth="100"
-                             stroke="#000"
-                             strokeLinecap="round"
-                             pathLength="0"
-                             opacity="0"
-                             initial={{opacity: 0}}
-                             animate={{opacity: 0.7}}
-                             transition={{duration: 2, delay: 0}}
-                             d="M9135 6445 c-88 -32 -109 -97 -104 -332 4 -176 8 -189 73 -237 25
+        />
+        <motion.path fill="red"
+                     strokeWidth="100"
+                     stroke="#000"
+                     strokeLinecap="round"
+                     pathLength="0"
+                     opacity="0"
+                     initial={{opacity: 0}}
+                     animate={{opacity: 0.7}}
+                     transition={{duration: 2, delay: 0}}
+                     d="M9135 6445 c-88 -32 -109 -97 -104 -332 4 -176 8 -189 73 -237 25
 -19 43 -21 229 -24 188 -2 204 -1 235 18 67 41 72 62 72 284 0 225 -6 247 -78
 282 -50 26 -364 32 -427 9z"
-                />
-                <path d="M4984 5105 c3 -8 28 -49 56 -90 l51 -75 -1671 0 -1670 0 0 -628 c0
+        />
+        <path d="M4984 5105 c3 -8 28 -49 56 -90 l51 -75 -1671 0 -1670 0 0 -628 c0
 -711 -4 -675 80 -719 l43 -23 4131 0 c4005 0 4132 1 4166 19 20 10 44 36 57
 61 l23 43 0 624 0 623 -1670 0 -1671 0 51 75 c28 41 53 82 56 90 5 13 -112 15
 -1016 15 -904 0 -1021 -2 -1016 -15z m931 -122 c42 -23 59 -52 59 -103 0 -38
@@ -202,25 +202,25 @@ c193 -115 359 -221 370 -234 38 -49 40 -80 37 -652 -3 -551 -3 -555 -25 -585
 -18 -28 -73 19 -110 2 -110 -52 0 -86 98 -87 130 -2 15 39 52 206 47 211 -2 2
 -16 0 -31 -6 -45 -17 -135 -12 -180 10 -85 41 -127 156 -108 293 26 178 146
 308 302 326 59 7 137 -1 167 -17z"
-                />
-                <motion.path fill="black"
-                             strokeWidth="100"
-                             stroke="#000"
-                             strokeLinecap="round"
-                             pathLength="0"
-                             opacity="0"
-                             initial={{opacity: 0}}
-                             animate={{opacity: 0.7}}
-                             transition={{duration: 2, delay: 0}}
-                             d="M5650 3161 c0 -182 -41 -359 -122 -530 -63 -131 -330 -516 -532 -766
+        />
+        <motion.path fill="black"
+                     strokeWidth="100"
+                     stroke="#000"
+                     strokeLinecap="round"
+                     pathLength="0"
+                     opacity="0"
+                     initial={{opacity: 0}}
+                     animate={{opacity: 0.7}}
+                     transition={{duration: 2, delay: 0}}
+                     d="M5650 3161 c0 -182 -41 -359 -122 -530 -63 -131 -330 -516 -532 -766
 -99 -123 -214 -110 1004 -110 1053 0 1055 0 1058 20 2 14 -34 67 -104 155
 -190 241 -404 551 -469 681 -88 174 -125 320 -133 522 l-5 137 -348 0 -349 0
 0 -109z"
-                />
-            </motion.g>
-        </motion.svg>
+        />
+      </motion.g>
+    </motion.svg>
 
-    </motion.header>
+  </motion.header>
 }
 
 Logo.propTypes = {}

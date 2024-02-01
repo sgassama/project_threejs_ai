@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion'
-import React, {useRef} from 'react'
+import React from 'react'
 
 const skills: string[] = [
   `• Languages: Javascript, Java, Python, PHP, Typescript, SQL, HTML, CSS`,
@@ -13,8 +13,6 @@ const skills: string[] = [
 ]
 
 export function SkillSetList(): JSX.Element {
-  const skillSetRef = useRef(null)
-
   const boxVariant = {
     hidden: {
       x: '-100vw',
@@ -35,11 +33,11 @@ export function SkillSetList(): JSX.Element {
     },
   }
 
-  return <motion.ul ref={skillSetRef}
-                    className={'skill-set flex justify-center align-middle border-violet-800 bg-gray-100 bg-opacity-100 text-[var(--dark-grey-text)] list-item h-fit'}
-                    variants={boxVariant}
-                    animate={'visible'}
-                    initial="hidden"
+  return <motion.ul
+    className={'skill-set flex justify-center align-middle border-violet-800 bg-gray-100 bg-opacity-100 text-[var(--dark-grey-text)] list-item h-fit'}
+    variants={boxVariant}
+    animate={'visible'}
+    initial="hidden"
   >
     {skills.map((skill, i) =>
       <motion.li
