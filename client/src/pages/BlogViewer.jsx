@@ -9,7 +9,7 @@ import {useParams} from "react-router-dom";
 import {motion} from "framer-motion";
 import {pageTransitionsAnimation} from "../config/motion.js";
 
-export const BlogViewer = () => {
+const BlogViewer = () => {
   const {slug} = useParams();
 
   const temp = !!slug && slug || temp;
@@ -33,3 +33,5 @@ export const BlogViewer = () => {
     </motion.main>
   )
 }
+
+export default BlogViewer
