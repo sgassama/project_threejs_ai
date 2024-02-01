@@ -1,7 +1,7 @@
 import {motion} from 'framer-motion'
 import React from 'react'
 
-export function Logo(): JSX.Element {
+export default function Logo(): JSX.Element {
   const handleClick = () => {
   }
   const background = {}

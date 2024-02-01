@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {motion} from 'framer-motion'
 import React from 'react'
 
-export function SocialMediaLinks(): React.JSX.Element {
+export default function SocialMediaLinks(): React.JSX.Element {
   return (
     <motion.ul className={`flex flex-row gap-[16px] z-[99999] pt-4`}>
       <li className={`text-center text-violet-600 flex`}>

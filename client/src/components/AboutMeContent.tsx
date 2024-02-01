@@ -1,9 +1,8 @@
 import {motion, useScroll, useTransform} from 'framer-motion'
-import React, {RefObject} from 'react'
-// @ts-ignore
-import {headContainerAnimation} from '../config/motion.js'
-import {SkillSetList} from './SkillSetList.tsx'
-import {SocialMediaLinks} from "./SocialMediaLinks.tsx";
+import React, {lazy, RefObject} from 'react'
+
+const SkillSetList = lazy(() => import("./SkillSetList.tsx"))
+const SocialMediaLinks = lazy(() => import("./SocialMediaLinks.tsx"))
 
 export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.Element {
   const {scrollYProgress} = useScroll({

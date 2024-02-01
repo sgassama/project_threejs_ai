@@ -12,7 +12,7 @@ const skills: string[] = [
   '• Collaboration Tools: JIRA, Confluence, Trello, Slack, Google Drive, Microsoft Office',
 ]
 
-export function SkillSetList(): JSX.Element {
+export default function SkillSetList(): JSX.Element {
   const boxVariant = {
     hidden: {
       x: '-100vw',

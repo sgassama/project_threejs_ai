@@ -1,13 +1,19 @@
 import React, {useState} from 'react';
 import {Link, Route, Routes, useLocation} from "react-router-dom";
-import Portfolio from "./pages/Portfolio.jsx";
-import Home from "./pages/Home.jsx";
+// import Portfolio from "./pages/Portfolio.jsx";
+// import Home from "./pages/Home.jsx";
 import {AnimatePresence, motion} from "framer-motion";
-import Contact from "./pages/Contact.jsx";
-import Blog from "./pages/Blog.jsx";
-import {BlogViewer} from "./pages/BlogViewer.jsx";
-import {Logo} from "./components/Logo";
+// import Contact from "./pages/Contact.jsx";
+// import Blog from "./pages/Blog.jsx";
+// import {BlogViewer} from "./pages/BlogViewer.jsx";
 import {Toaster} from "react-hot-toast";
+
+const Home = lazy(() => import('./pages/Home'))
+const Portfolio = lazy(() => import('./pages/Portfolio'))
+const Contact = lazy(() => import('./pages/Contact'))
+const Blog = lazy(() => import('./pages/Blog'))
+const BlogViewer = lazy(() => import('./pages/BlogViewer'))
+const Logo = lazy(() => import('./components/Logo'))
 
 
 const AppRouter = () => {
