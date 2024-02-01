@@ -13,7 +13,7 @@ const Logo = lazy(() => import('./components/Logo'))
 const AppRouter = () => {
   let location = useLocation()
 
-  const [activeLink, setActiveLink] = useState(0);
+  // const [activeLink, setActiveLink] = useState(0);
 
   const links = [{
     displayName: 'Home',
@@ -31,12 +31,13 @@ const AppRouter = () => {
 
   let bgPosition = 100;
   const handleLinkClick = (index) => {
-    if (index < activeLink) {
-      shiftBackgroundPosition('right')
-    } else if (index > activeLink) {
-      shiftBackgroundPosition('left')
-    }
-    setActiveLink(index);
+    // if (index < activeLink) {
+    //   shiftBackgroundPosition('right')
+    // } else if (index > activeLink) {
+    //   shiftBackgroundPosition('left')
+    // }
+    // setActiveLink(index);
+    shiftBackgroundPosition('left')
   };
 
   function shiftBackgroundPosition(direction) {
@@ -58,7 +59,7 @@ const AppRouter = () => {
 
     <div className="flex flex-col h-full w-full">
 
-      <motion.div className="essgee-bg transition-all delay-100 overflow-hidden"
+      <motion.div className="essgee-bg transition-all duration-700 delay-100 overflow-hidden"
                   id={`essgee-bg`}
       ></motion.div>
 
