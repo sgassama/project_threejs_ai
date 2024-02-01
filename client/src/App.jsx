@@ -63,7 +63,7 @@ const AppRouter = () => {
       ></motion.div>
 
       <nav className="glassmorphism fixed w-full z-50 h-[10vh] text-[1rem] m-auto">
-        <div className="absolute -z-20 bg-white bg-opacity-60 inset-0"></div>
+        <div className="absolute -z-20 bg-white bg-opacity-25 inset-0"></div>
         <ul className="flex space-x-4 items-center h-full w-full max-w-[1020px] m-auto p-4">
           {
             links.map(
