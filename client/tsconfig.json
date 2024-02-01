@@ -2,7 +2,10 @@
   "compilerOptions": {
     "baseUrl": "src", // Set the base directory for imports
     "paths": {
-      "components/*": ["./components/*"]
+      "@components/*": ["src/components", "src/components/*"],
+      "@pages/*": [
+        "src/pages", "src/pages/*"
+      ]
     },
     "esModuleInterop": true,
     "target": "ES2022",
@@ -26,6 +29,6 @@
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src"],
+  "include": ["src", "src/components"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
