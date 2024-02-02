@@ -48,7 +48,7 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
                 layout
                 style={{
                   y: heroImgY,
-                  backgroundImage: 'url("hero copy.webp")',
+                  backgroundImage: 'url("hero–small.webp")',
                   backgroundSize: 'cover',
                 }}
     >
@@ -56,7 +56,7 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
     <motion.div className={'md:hidden absolute inset-4 z-20 bg-bottom md:bg-top h-screen'}
                 layout
                 style={{
-                  backgroundImage: 'url("hero-transparent copy.webp")',
+                  backgroundImage: 'url("hero-transparent–small.webp")',
                   backgroundSize: 'cover',
                 }}
     >
