@@ -26,7 +26,25 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
       Siaka-G DEV
     </motion.h1>
 
-    <motion.div className={'absolute inset-4 z-0 bg-bottom md:bg-top h-screen'}
+    <motion.div className={'hidden md:block absolute inset-4 z-0 bg-bottom md:bg-top h-screen'}
+                layout
+                style={{
+                  y: heroImgY,
+                  backgroundImage: 'url("hero.webp")',
+                  backgroundSize: 'cover',
+                }}
+    >
+    </motion.div>
+    <motion.div className={'hidden md:block absolute inset-4 z-20 bg-bottom md:bg-top h-screen'}
+                layout
+                style={{
+                  backgroundImage: 'url("hero-transparent.webp")',
+                  backgroundSize: 'cover',
+                }}
+    >
+    </motion.div>
+
+    <motion.div className={'md:hidden absolute inset-4 z-0 bg-bottom md:bg-top h-screen'}
                 layout
                 style={{
                   y: heroImgY,
@@ -34,16 +52,14 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
                   backgroundSize: 'cover',
                 }}
     >
-
     </motion.div>
-    <motion.div className={'absolute inset-4 z-20 bg-bottom md:bg-top h-screen'}
+    <motion.div className={'md:hidden absolute inset-4 z-20 bg-bottom md:bg-top h-screen'}
                 layout
                 style={{
                   backgroundImage: 'url("hero-transparent copy.webp")',
                   backgroundSize: 'cover',
                 }}
     >
-
     </motion.div>
 
 
