@@ -1,4 +1,4 @@
-import React, {lazy, useState} from 'react';
+import React, {lazy} from 'react';
 import {Link, Route, Routes, useLocation} from "react-router-dom";
 import {AnimatePresence, motion} from "framer-motion";
 import {Toaster} from "react-hot-toast";
@@ -12,9 +12,6 @@ const Logo = lazy(() => import('./components/Logo'))
 
 const AppRouter = () => {
   let location = useLocation()
-
-  // const [activeLink, setActiveLink] = useState(0);
-
   const links = [{
     displayName: 'Home',
     path: '/',
@@ -29,14 +26,7 @@ const AppRouter = () => {
     path: '/contact',
   },];
 
-  let bgPosition = 100;
-  const handleLinkClick = (index) => {
-    // if (index < activeLink) {
-    //   shiftBackgroundPosition('right')
-    // } else if (index > activeLink) {
-    //   shiftBackgroundPosition('left')
-    // }
-    // setActiveLink(index);
+  const handleLinkClick = () => {
     shiftBackgroundPosition('left')
   };
 

@@ -26,22 +26,20 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
       Siaka-G DEV
     </motion.h1>
 
-    <motion.div className={'absolute inset-4 z-0'}
+    <motion.div className={'absolute inset-4 z-0 bg-bottom md:bg-top h-screen'}
                 layout
                 style={{
                   y: heroImgY,
-                  backgroundImage: 'url("hero.webp")',
-                  backgroundPosition: 'bottom',
+                  backgroundImage: 'url("hero copy.webp")',
                   backgroundSize: 'cover',
                 }}
     >
 
     </motion.div>
-    <motion.div className={'absolute inset-4 z-20'}
+    <motion.div className={'absolute inset-4 z-20 bg-bottom md:bg-top h-screen'}
                 layout
                 style={{
-                  backgroundImage: 'url("hero-transparent.webp")',
-                  backgroundPosition: 'bottom',
+                  backgroundImage: 'url("hero-transparent copy.webp")',
                   backgroundSize: 'cover',
                 }}
     >
@@ -50,7 +48,7 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
 
 
     <div
-      className="about-me-wrapper z-[99999] bg-white h-fit mt-[500px] w-full flex flex-col justify-start gap-4">
+      className="about-me-wrapper z-[99999] bg-white h-fit mt-[250px] md:mt-[500px] w-full flex flex-col justify-start gap-4">
  <span className={`block`}>
 
             <span className="text-violet-600 font-bold inline"> Hello! I'm Siaka Gassama</span>, a seasoned full-stack developer with a passion for building and tinkering. With over 9 years of hands-on experience, I've mastered the art of creating and maintaining diverse APIs and websites/applications. My expertise extends to automating mission-critical deployments through the implementation of configuration management, CI/CD, and DevOps processes.
