@@ -1,9 +1,9 @@
 [dev]
-  command = "cd client && yarn install && yarn run dev"
+  command = "cd client && bun install && bun run dev"
   publish = "dist"
 
 [build]
-  command = "cd client && yarn install && yarn run build"
+  command = "cd client && bun install && bun run build"
   publish = "client/dist"
 
 [functions]
