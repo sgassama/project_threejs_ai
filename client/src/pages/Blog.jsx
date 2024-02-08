@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import {pageTransitionsAnimation} from "../config/motion.js";
+import {pageTransitionsAnimation} from "../config/motion.ts";
 import {Link} from "react-router-dom";
 
 const Blog = () => {

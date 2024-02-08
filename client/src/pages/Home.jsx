@@ -1,11 +1,10 @@
 import {motion} from 'framer-motion';
-import {pageTransitionsAnimation} from "../config/motion.js";
-// import {AboutMeContent} from "../components/AboutMeContent.tsx";
+import {pageTransitionsAnimation} from "../config/motion.ts";
 import React, {lazy, Suspense, useRef} from "react";
 
 const AboutMeContent = lazy(() => import('../components/AboutMeContent.tsx'));
 
-const renderLoader = () => <p>Loading</p>;
+const renderLoader = () => <p></p>;
 
 const Home = () => {
   const ref = useRef(null);

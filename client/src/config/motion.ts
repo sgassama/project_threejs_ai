@@ -1,12 +1,12 @@
 export const transition = {
     type: "spring",
-    duration: 0.35,
+    duration: 0.4,
     // staggerChildren: .1,
     // delayChildren: .1,
     // damping: 40,
 };
 
-export const slideAnimation = (direction) => {
+export const slideAnimation = (direction: string) => {
     return {
         initial: {
             x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
@@ -77,7 +77,7 @@ export const headContainerAnimation = {
 
 export const pageTransitionsAnimation = {
     initial: {
-        x: '-30%',
+        x: '-20%',
         opacity: 0,
         transition: {...transition, delay: 0},
     },
@@ -87,7 +87,7 @@ export const pageTransitionsAnimation = {
         transition: {...transition, delay: 0},
     },
     exit: {
-        x: '30%',
+        x: '80vw',
         opacity: 0,
         transition: {...transition, delay: 0},
     },

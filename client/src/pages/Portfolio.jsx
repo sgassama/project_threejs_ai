@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import {motion} from "framer-motion";
-import {pageTransitionsAnimation} from "../config/motion.js";
+import {pageTransitionsAnimation} from "../config/motion.ts";
 import {PortfolioItem} from "../components/PortfolioItem.tsx";
 
 const portfolioItems = [

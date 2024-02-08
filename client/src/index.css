@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 @tailwind base;
@@ -8,16 +8,18 @@
 :root {
   --violet: #5e35b1;
   --green: rgba(4, 171, 151, 1);
-  --grey-text: #7a7a7a;
+  --grey-text: #4c4c4c;
   --dark-grey-text: #5a5a5a;
 }
 
 html, body {
-  @apply h-screen w-full text-[.95rem] overflow-hidden;
+  @apply h-screen w-full text-[.95rem] sm:text-[1rem] overflow-hidden;
 }
 
 html {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   color: var(--grey-text);
   position: fixed;
 }
@@ -26,7 +28,7 @@ html {
   @apply h-full w-full;
   position: fixed;
   top: 0;
-  opacity: .03;
+  opacity: .01;
   background-image: url('assets/bg.svg');
   background-repeat: repeat-x;
   z-index: -99;
@@ -48,7 +50,9 @@ html {
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
   }
 }
 
@@ -60,17 +64,8 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.essgee .home-content-section {
-  @apply p-4;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.markdownPreviewer__preview .essgee-page {
+  @apply overflow-x-hidden;
 }
 
 .markdownPreviewer__preview h1 {
@@ -183,7 +178,7 @@ html {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 
     div {
       @apply w-full h-full;
@@ -195,5 +190,5 @@ html {
 /* END portfolio */
 
 .essgee-page {
-  @apply p-4 gap-4 flex flex-col max-w-[1020px] m-auto mt-4 w-full overflow-y-auto overflow-x-hidden h-[100rvh] mb-24 sm:mb-4 pt-[80px];
+  @apply gap-4 flex flex-col max-w-[1020px] m-auto w-full h-screen pt-[80px] overflow-x-auto;
 }

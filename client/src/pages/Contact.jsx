@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import {pageTransitionsAnimation} from "../config/motion.js";
+import {pageTransitionsAnimation} from "../config/motion.ts";
 import {ContactMeForm} from "../components/ContactMeForm.tsx";
 import {useState} from "react";
 import toast from "react-hot-toast";

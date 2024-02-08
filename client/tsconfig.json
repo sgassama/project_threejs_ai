@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "src", // Set the base directory for imports
+    "baseUrl": "./", // Set the base directory for imports
     "paths": {
-      "@components/*": ["src/components", "src/components/*"],
-      "@pages/*": [
-        "src/pages", "src/pages/*"
-      ]
+      "@/*": ["./*"],
+      "@components/*": ["./src/components", "./src/components/*"],
+      "@pages/*": ["./src/pages", "./src/pages/*"],
+      "@config/*": ["./src/config", "./src/config/*"],
     },
     "esModuleInterop": true,
     "target": "ES2022",
@@ -29,6 +29,6 @@
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src", "src/components"],
+  "include": ["src", "src/components", "src/pages", "src/config"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

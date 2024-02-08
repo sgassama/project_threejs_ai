@@ -1,4 +1,6 @@
-import {faGithub, faLinkedin, faStackOverflow} from '@fortawesome/free-brands-svg-icons'
+import {faGithub} from '@fortawesome/free-brands-svg-icons/faGithub'
+import {faLinkedin} from '@fortawesome/free-brands-svg-icons/faLinkedin'
+import {faStackOverflow} from '@fortawesome/free-brands-svg-icons/faStackOverflow'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {motion} from 'framer-motion'
 import React from 'react'

@@ -1,9 +1,7 @@
-import React from 'react';
 import {motion} from "framer-motion";
+import React from 'react';
 
 const IntroductionToRouting: React.FC = () => {
-  /* routing_in_next_js */
-  // @ts-ignore
   return (
     <motion.div className={`essgee-page !p-0 !mt-0 h-full !pb-4`}>
 
@@ -26,14 +24,14 @@ const IntroductionToRouting: React.FC = () => {
       </p>
       <br/>
       <pre>
-                pages /
-                <br/>
-                ├── index.js
-                <br/>
-                ├── about.js
-                <br/>
-                └── contact.js
-            </pre>
+        pages /
+        <br/>
+        ├── index.js
+        <br/>
+        ├── about.js
+        <br/>
+        └── contact.js
+      </pre>
       <br/>
       <p>In this structure, <code>index.js</code> represents the home page, <code>about.js</code> represents the about page, and <code>contact.js</code> represents the contact page. The routes are automatically inferred from the file names.
       </p>
@@ -85,7 +83,6 @@ const IntroductionToRouting: React.FC = () => {
       <p>Dynamic routing enables the creation of flexible and data-driven pages, providing a powerful tool for building a wide range of applications.
       </p>
 
-
       <h2>Programmatic Navigation</h2>
 
       <p>Next.js allows for programmatic navigation, enabling developers to navigate between pages based on user interactions or other events. The <code>router</code> object, provided by the <code>next/router</code> module, exposes methods for programmatic navigation.
@@ -93,11 +90,11 @@ const IntroductionToRouting: React.FC = () => {
 
       <br/>
       <pre>
-                <br/>
-                import &#x2774;useRouter&#x2775; from 'next/router';
-                <br/>
+        <br/>
+        import &#x2774;useRouter&#x2775; from 'next/router';
+        <br/>
 
-                const NavigationButton = () =&gt; &#x2774;
+        const NavigationButton = () =&gt; &#x2774;
         <br/>
         &nbsp;&nbsp;const router = useRouter();
 
@@ -109,13 +106,12 @@ const IntroductionToRouting: React.FC = () => {
 
         &nbsp;&nbsp;return &#x276A;
         <br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&lt;button onClick=&#x2774;handleClick&#x2775;&gt;Go to About
-                Page&lt;/button&gt;
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;button onClick=&#x2774;handleClick&#x2775;&gt;Go to About Page&lt;/button&gt;
         <br/>
         &nbsp;&nbsp;&#x276B;
         <br/>
         &#x2775;
-            </pre>
+      </pre>
 
       <br/>
       <p>Using the <code>push</code> method from the <code>router</code> object, you can navigate to different pages programmatically, giving you fine-grained control over the navigation flow.
@@ -125,11 +121,8 @@ const IntroductionToRouting: React.FC = () => {
 
       <p>Routing in Next.js is a seamless and powerful feature that significantly contributes to the framework's ease of use and developer experience. The file-system-based routing, dynamic routing, and programmatic navigation capabilities make it a versatile tool for building modern web applications. As you continue to explore Next.js, mastering its routing system will empower you to create dynamic, user-friendly, and performant web applications.
       </p>
-
-
     </motion.div>
-  )
-    ;
+  );
 };
 
 export default IntroductionToRouting;

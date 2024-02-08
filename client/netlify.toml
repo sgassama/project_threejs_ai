@@ -1,9 +1,9 @@
 [dev]
-  command = "yarn install && yarn run dev"
+  command = "bun install && bun run dev"
   publish = "dist"
 
 [build]
-  command = "yarn install && yarn run build"
+  command = "bun install && bun run build"
   publish = "dist"
 
 [functions]
