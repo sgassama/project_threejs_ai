@@ -60,7 +60,7 @@ const AppRouter = () => {
             links.map(
               (link, i) => <li key={i}>
                 <Link to={link.path}
-                      className="text-white transition-all duration-300 flex gradient-text"
+                      className="text-white transition-all duration-300 flex gradient-text font-bold"
                       style={{textDecoration: (location.pathname.includes('/blog/') && link.displayName === 'Blog') || location.pathname === link.path ? 'overline' : 'none'}}
                       onClick={() => handleLinkClick(i)}
                 > {link.displayName} </Link>
