@@ -11,13 +11,13 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
     container: scrollRef,
     offset: ['start', 'end start'],
   });
-  const heroImgY = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
+  const heroImgY = useTransform(scrollYProgress, [0, 1], ['0%', '10%']);
   const heroTextY = useTransform(scrollYProgress, [0, 1], ['0%', '500%']);
 
   return <motion.div className={`flex flex-col gap-4 w-full h-full`}>
 
     <motion.h1
-      className={'font-bold text-[var(--dark-grey-text)] satisfy-regular mix-blend-difference absolute mt-[7vh] sm:mt-[19vh] left-8 z-10 text-3xl sm:text-5xl'}
+      className={'font-bold text-[var(--dark-grey-text)] satisfy-regular mix-blend-difference absolute mt-[7vh] sm:mt-[11vh] md:mt-[19vh] left-8 z-10 text-3xl sm:text-4xl md:text-5xl'}
       style={{
         y: heroTextY,
       }}
@@ -25,7 +25,7 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
       Siaka-G DEV
     </motion.h1>
 
-    <motion.div className={'hidden sm:block w-full absolute z-0 bg-top h-screen'}
+    <motion.div className={'hidden md:block w-full absolute z-0 bg-top h-screen'}
                 layout
                 style={{
                   y: heroImgY,
@@ -34,7 +34,7 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
                 }}
     >
     </motion.div>
-    <motion.div className={'hidden sm:block w-full absolute z-20 bg-top h-screen'}
+    <motion.div className={'hidden md:block w-full absolute z-20 bg-top h-screen'}
                 layout
                 style={{
                   backgroundImage: 'url("hero-t.webp")',
@@ -43,7 +43,7 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
     >
     </motion.div>
 
-    <motion.div className={'sm:hidden w-full absolute z-0 bg-top h-full'}
+    <motion.div className={'md:hidden w-full absolute z-0 bg-top h-full'}
                 layout
                 style={{
                   y: heroImgY,
@@ -52,7 +52,7 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
                 }}
     >
     </motion.div>
-    <motion.div className={'sm:hidden w-full absolute z-20 bg-top h-full'}
+    <motion.div className={'md:hidden w-full absolute z-20 bg-top h-full'}
                 layout
                 style={{
                   backgroundImage: 'url("hero-t_640x360.webp")',
@@ -62,7 +62,7 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
     </motion.div>
 
     <div
-      className="about-me-wrapper z-[99999] bg-white h-fit mt-[23vh] sm:mt-[50vh] w-full flex flex-col justify-start gap-4">
+      className="about-me-wrapper pt-4 z-[99999] bg-white h-fit mt-[23vh] md:mt-[50vh] w-full flex flex-col justify-start gap-4">
  <span className={`block`}>
 
             <span className="text-violet-600 font-bold inline"> Hello! I'm Siaka Gassama</span>, a seasoned full-stack developer with a passion for building and tinkering. With over 9 years of hands-on experience, I've mastered the art of creating and maintaining diverse APIs and websites/applications. My expertise extends to automating mission-critical deployments through the implementation of configuration management, CI/CD, and DevOps processes.
