@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 
 const NuxtStudyGuide: React.FC = () => {
   return (
-    <motion.div className={`essgee-page !pt-0 !mt-0 h-screen !pb-4`}>
+    <motion.div className={`essgee-page !mt-0 h-full !pb-4`}>
       <h1>A Comprehensive Introduction to Nuxt.js</h1>
 
       <p>Welcome to the world of Nuxt.js, a powerful framework built on top of Vue.js. Whether you're a seasoned developer or just starting your journey in web development, Nuxt.js offers a feature-packed and intuitive environment for building modern, scalable web applications.</p>

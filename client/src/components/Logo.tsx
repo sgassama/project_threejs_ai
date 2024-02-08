@@ -2,12 +2,9 @@ import {motion} from 'framer-motion'
 import React from 'react'
 
 export default function Logo(): JSX.Element {
-  const handleClick = () => {
-  }
-  const background = {}
-
-  return <motion.header style={background}
-                        onTap={handleClick}
+  return <motion.header initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        transition={{duration: 2, delay: 2}}
                         className="essgee-header absolute top-0 z-[99999] right-0 flex flex-row items-center justify-center overflow-hidden"
   >
     <motion.svg className={'flex'}
@@ -31,7 +28,7 @@ export default function Logo(): JSX.Element {
                      opacity="0"
                      initial={{pathLength: 0, opacity: 0}}
                      animate={{pathLength: 1, opacity: .7}}
-                     transition={{duration: 2, delay: 0}}
+                     transition={{duration: 2, delay: 2}}
                      d="M1830 10232 c-22 -12 -44 -35 -57 -62 l-23 -44 0 -2443 0 -2443 4250
 0 4250 0 0 2448 c0 2349 -1 2449 -18 2482 -12 22 -35 44 -62 58 l-44 22 -4131
 0 c-3978 0 -4132 -1 -4165 -18z m1121 -310 c171 -61 289 -208 310 -389 6 -46
@@ -66,7 +63,7 @@ c193 -115 359 -221 370 -234 38 -49 40 -80 37 -652 -3 -551 -3 -555 -25 -585
           opacity="0"
           initial={{opacity: 0}}
           animate={{opacity: 1}}
-          transition={{duration: 2, delay: 0}}
+          transition={{duration: 2, delay: 2}}
           d="M1830 10232 c-22 -12 -44 -35 -57 -62 l-23 -44 0 -2443 0 -2443 4250
 0 4250 0 0 2448 c0 2349 -1 2449 -18 2482 -12 22 -35 44 -62 58 l-44 22 -4131
 0 c-3978 0 -4132 -1 -4165 -18z m1121 -310 c171 -61 289 -208 310 -389 6 -46
@@ -154,7 +151,7 @@ c193 -115 359 -221 370 -234 38 -49 40 -80 37 -652 -3 -551 -3 -555 -25 -585
                      opacity="0"
                      initial={{opacity: 0}}
                      animate={{opacity: 1}}
-                     transition={{duration: 2, delay: 0}}
+                     transition={{duration: 2, delay: 2}}
                      d="M5608 6818 l-218 -131 0 -353 c0 -195 3 -354 8 -354 4 1 106 60 227
 133 l220 133 3 352 c2 278 0 352 -10 352 -7 -1 -111 -60 -230 -132z"
         />
@@ -166,7 +163,7 @@ c193 -115 359 -221 370 -234 38 -49 40 -80 37 -652 -3 -551 -3 -555 -25 -585
                      opacity="0"
                      initial={{opacity: 0}}
                      animate={{opacity: 0.7}}
-                     transition={{duration: 2, delay: 0}}
+                     transition={{duration: 2, delay: 2}}
                      d="M9110 7953 c-69 -48 -83 -106 -79 -322 4 -141 6 -159 27 -192 41 -66
 71 -74 289 -74 213 0 221 2 271 76 23 33 23 38 20 241 -3 205 -3 207 -28 233
 -48 52 -64 55 -277 55 -172 0 -202 -2 -223 -17z"
@@ -179,7 +176,7 @@ c193 -115 359 -221 370 -234 38 -49 40 -80 37 -652 -3 -551 -3 -555 -25 -585
                      opacity="0"
                      initial={{opacity: 0}}
                      animate={{opacity: 0.7}}
-                     transition={{duration: 2, delay: 0}}
+                     transition={{duration: 2, delay: 2}}
                      d="M9135 6445 c-88 -32 -109 -97 -104 -332 4 -176 8 -189 73 -237 25
 -19 43 -21 229 -24 188 -2 204 -1 235 18 67 41 72 62 72 284 0 225 -6 247 -78
 282 -50 26 -364 32 -427 9z"
@@ -211,7 +208,7 @@ c193 -115 359 -221 370 -234 38 -49 40 -80 37 -652 -3 -551 -3 -555 -25 -585
                      opacity="0"
                      initial={{opacity: 0}}
                      animate={{opacity: 0.7}}
-                     transition={{duration: 2, delay: 0}}
+                     transition={{duration: 2, delay: 2}}
                      d="M5650 3161 c0 -182 -41 -359 -122 -530 -63 -131 -330 -516 -532 -766
 -99 -123 -214 -110 1004 -110 1053 0 1055 0 1058 20 2 14 -34 67 -104 155
 -190 241 -404 551 -469 681 -88 174 -125 320 -133 522 l-5 137 -348 0 -349 0

@@ -17,12 +17,12 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
   return <motion.div className={`flex flex-col gap-4 w-full h-full`}>
 
     <motion.h1
-      className={'font-bold text-[var(--dark-grey-text)] satisfy-regular mix-blend-difference absolute mt-[7vh] sm:mt-[11vh] md:mt-[19vh] left-8 z-10 text-3xl sm:text-4xl md:text-5xl'}
+      className={'font-bold text-[var(--dark-grey-text)] satisfy-regular mix-blend-difference absolute mt-[4.5vh] sm:mt-[11vh] md:mt-[19vh] left-8 z-10 text-5xl sm:text-6xl md:text-7xl'}
       style={{
         y: heroTextY,
       }}
     >
-      Siaka-G DEV
+      Siaka-G &nbsp; DEV
     </motion.h1>
 
     <motion.div className={'hidden md:block w-full absolute z-0 bg-top h-screen'}

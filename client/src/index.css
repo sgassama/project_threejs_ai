@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.satisfy-regular {
+  /*font-family: "Satisfy", cursive;*/
+  font-family: "Ingrid Darling", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --violet: #5e35b1;
   --green: rgba(4, 171, 151, 1);
   --grey-text: #4c4c4c;
-  --dark-grey-text: #5a5a5a;
+  --dark-grey-text: #f14d4d;
 }
 
 html, body {
@@ -42,12 +50,6 @@ html {
   color: rgba(0, 0, 0, .8);
 }
 
-.satisfy-regular {
-  font-family: "Satisfy", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter Tight", sans-serif;
@@ -64,8 +66,12 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.markdownPreviewer__preview .essgee-page {
-  @apply overflow-x-hidden;
+.markdownPreviewer__preview.essgee-page {
+  @apply pt-0;
+}
+
+.markdownPreviewer__preview.essgee-page > .essgee-page {
+  @apply pt-[80px] overflow-x-hidden;
 }
 
 .markdownPreviewer__preview h1 {

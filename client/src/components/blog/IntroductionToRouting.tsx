@@ -3,7 +3,7 @@ import React from 'react';
 
 const IntroductionToRouting: React.FC = () => {
   return (
-    <motion.div className={`essgee-page !p-0 !mt-0 h-full !pb-4`}>
+    <motion.div className={`essgee-page !mt-0 h-full !pb-4`}>
 
       <h1>Comprehensive Introduction to Routing in Next.js</h1>
 

@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 
 const EventLoopDemystified: React.FC = () => {
     return (
-      <motion.div className={`essgee-page !p-0 !mt-0 h-full !pb-4`}>
+      <motion.div className={`essgee-page !mt-0 h-full !pb-4`}>
         <h1>Demystifying the JavaScript Event Loop: A Journey into the Heart of Web App Responsiveness</h1>
 
         <p>
