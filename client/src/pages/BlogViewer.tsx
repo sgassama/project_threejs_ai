@@ -12,7 +12,7 @@ import {pageTransitionsAnimation} from "../config/motion.ts";
 const BlogViewer = () => {
   const {slug} = useParams();
 
-  const temp = !!slug && slug || temp;
+  const temp: string|boolean = !!slug && slug;
 
   return (<motion.main className={`markdownPreviewer__preview essgee-page`}
                        variants={pageTransitionsAnimation}

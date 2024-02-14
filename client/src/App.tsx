@@ -1,14 +1,14 @@
-import React, {lazy} from 'react';
-import {Link, Route, Routes, useLocation} from "react-router-dom";
-import {AnimatePresence, motion} from "framer-motion";
-import {Toaster} from "react-hot-toast";
+import Logo from '@/src/components/Logo.tsx'
+import Blog from '@pages/Blog.tsx'
+import BlogViewer from '@pages/BlogViewer.tsx'
+import Contact from '@pages/Contact.tsx'
 
-const Home = lazy(() => import('./pages/Home'))
-const Portfolio = lazy(() => import('./pages/Portfolio'))
-const Contact = lazy(() => import('./pages/Contact'))
-const Blog = lazy(() => import('./pages/Blog'))
-const BlogViewer = lazy(() => import('./pages/BlogViewer'))
-const Logo = lazy(() => import('./components/Logo'))
+import Home from '@pages/Home.tsx'
+import Portfolio from '@pages/Portfolio.tsx'
+import {AnimatePresence, motion} from "framer-motion";
+import React from 'react';
+import {Toaster} from "react-hot-toast";
+import {Link, Route, Routes, useLocation} from "react-router-dom";
 
 const AppRouter = () => {
   let location = useLocation()
@@ -30,7 +30,7 @@ const AppRouter = () => {
     shiftBackgroundPosition('left')
   };
 
-  function shiftBackgroundPosition(direction) {
+  function shiftBackgroundPosition(direction: string) {
     const elementId = 'essgee-bg'
     const element = document.getElementById(elementId);
 
@@ -62,7 +62,7 @@ const AppRouter = () => {
                 <Link to={link.path}
                       className="text-white transition-all duration-300 flex gradient-text font-bold"
                       style={{textDecoration: (location.pathname.includes('/blog/') && link.displayName === 'Blog') || location.pathname === link.path ? 'overline' : 'none'}}
-                      onClick={() => handleLinkClick(i)}
+                      onClick={() => handleLinkClick()}
                 > {link.displayName} </Link>
               </li>
             )

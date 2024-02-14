@@ -1,8 +1,8 @@
 import {motion, useScroll, useTransform} from 'framer-motion'
-import React, {lazy, RefObject} from 'react'
+import React, {RefObject, Suspense} from 'react'
 
-const SkillSetList = lazy(() => import("./SkillSetList.tsx"))
-const SocialMediaLinks = lazy(() => import("./SocialMediaLinks.tsx"))
+import SkillSetList from "./SkillSetList.tsx"
+import SocialMediaLinks from "./SocialMediaLinks.tsx"
 
 export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> }): JSX.Element {
   const {scrollYProgress} = useScroll({
@@ -62,7 +62,7 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
     </motion.div>
 
     <div
-      className="about-me-wrapper pt-4 z-[99999] bg-white h-fit mt-[23vh] md:mt-[50vh] w-full flex flex-col justify-start gap-4">
+      className="about-me-wrapper pt-4 z-[99999] bg-white h-fit mt-[55%] w-full flex flex-col justify-start gap-4">
  <span className={`block`}>
 
             <span className="text-violet-600 font-bold inline"> Hello! I'm Siaka Gassama</span>, a seasoned full-stack developer with a passion for building and tinkering. With over 9 years of hands-on experience, I've mastered the art of creating and maintaining diverse APIs and websites/applications. My expertise extends to automating mission-critical deployments through the implementation of configuration management, CI/CD, and DevOps processes.
@@ -74,10 +74,15 @@ export default function AboutMeContent({scrollRef}: { scrollRef: RefObject<any> 
       <span className={`flex flex-col`}>
             Here's a snapshot of my skill-set:
         </span>
-      <SkillSetList/>
+      <Suspense fallback={<div></div>}>
+        <SkillSetList/>
+      </Suspense>
+
       <span className={`text-violet-600 font-bold flex flex-col`}>
             Let's collaborate and bring your software projects to life!
-        <SocialMediaLinks></SocialMediaLinks>
+        <Suspense fallback={<div></div>}>
+          <SocialMediaLinks/>
+        </Suspense>
         </span>
     </div>
 

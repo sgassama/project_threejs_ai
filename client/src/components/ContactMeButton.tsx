@@ -3,7 +3,7 @@ import React from 'react'
 
 export function ContactMeButton({isDisabled = false}: {
   isDisabled?: boolean | undefined,
-}): JSX.Element {
+}): React.JSX.Element {
 
   return (
     <motion.div layout className="label w-full text-xl h-20 flex flex-col justify-center outline-0">

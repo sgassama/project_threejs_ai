@@ -1,8 +1,7 @@
+import AboutMeContent from "@/src/components/AboutMeContent.tsx"
 import {motion} from 'framer-motion';
+import React, {Suspense, useRef} from "react";
 import {pageTransitionsAnimation} from "../config/motion.ts";
-import React, {lazy, Suspense, useRef} from "react";
-
-const AboutMeContent = lazy(() => import('../components/AboutMeContent.tsx'));
 
 const renderLoader = () => <p></p>;
 

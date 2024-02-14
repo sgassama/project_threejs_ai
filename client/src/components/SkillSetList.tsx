@@ -12,7 +12,8 @@ const skills: string[] = [
   '• Collaboration Tools: JIRA, Confluence, Trello, Slack, Google Drive, Microsoft Office',
 ]
 
-export default function SkillSetList(): JSX.Element {
+
+function SkillSetList(): React.JSX.Element {
   const boxVariant = {
     hidden: {
       x: '-100vw',
@@ -55,3 +56,5 @@ export default function SkillSetList(): JSX.Element {
     )}
   </motion.ul>
 }
+
+export default SkillSetList
